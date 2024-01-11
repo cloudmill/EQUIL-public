@@ -6,14 +6,14 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-99e1ae21.js"></script>
+    <script type="module" crossorigin src="assets/index-6c32e4dd.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <div class="wrapper">
       <div class="modal-block">
       </div>
-      <header class="header">
+      <header class="header" data-header data-overlay-off>
         <div class="header-inner container"> 
           <div class="header-inner__left"> <a class="header__logo" href="#"> 
               <svg width="193" height="54" viewbox="0 0 193 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,13 +27,15 @@
                   </clippath>
                 </defs>
               </svg></a>
-            <nav class="header-nav"><a class="header-nav__catalog header-nav__item" href="#"> 
+            <nav class="header-nav desktop">
+              <div class="header-nav__catalog header-nav__item" data-header-catalog data-overlay-on> 
                 <div class="header-nav__cube"> 
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
                   </svg>
                 </div>
-                <div class="header-nav__text">Каталог</div></a><a class="header-nav__collections header-nav__item" href="#"> 
+                <div class="header-nav__text">Каталог</div>
+              </div><a class="header-nav__collections header-nav__item" href="#"> 
                 <div class="header-nav__cube"> 
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
@@ -53,14 +55,14 @@
             </nav>
           </div>
           <div class="header-inner__right"> 
-            <div class="header-contact"><a class="header-contact__contacts header-nav__item" href="#"> 
+            <div class="header-contact desktop"><a class="header-contact__contacts header-nav__item" href="#"> 
                 <div class="header-nav__cube">
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
                   </svg>
                 </div>
                 <div class="header-nav__text">контакты</div></a>
-              <div class="header-contact__modal header-nav__item">
+              <div class="header-contact__modal header-nav__item" header-modal-btn>
                 <div class="header-nav__cube">
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
@@ -69,19 +71,25 @@
                 <div class="header-nav__text">Cвязаться с нами</div>
               </div>
             </div>
+            <div class="header-burger mobile"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewbox="0 0 32 20" fill="none">
+                <path d="M28 6L4 6" stroke="white" stroke-width="1.5"></path>
+                <path d="M28 14L4 14" stroke="white" stroke-width="1.5"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </header>
       <main></main>
-      <div class="footer">
+      <footer class="footer">
         <div class="footer-inner">
-          <div class="footer-inner__up"> 
+          <div class="footer-inner__up" data-footer-top> 
             <svg width="68" height="68" viewbox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="68" width="68" height="68" rx="8" transform="rotate(-90 0 68)" fill="#F1F1F1"></rect>
               <path d="M25 40L32.3182 29.5L35.0455 29.5L43 40" stroke="#42444A" stroke-width="1.5"></path>
             </svg>
           </div>
-          <div class="footer-inner__col left footer-rect"> 
+          <div class="footer-inner__col left footer-rect desktop"> 
             <div class="footer-rect__vector"> 
               <svg width="802" height="750" viewbox="0 0 802 750" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-181.223 811.396L-167.263 783.403L-167.242 783.416L106.925 234.932L198.277 280.657L12.854 651.658L814.28 -8L872.619 76.3955L400.884 464.554L890.341 316.238L920 414.517L870.929 429.367L194.855 634.092L-309.391 1049L-379 979.468L-309.398 916.896L-181.223 811.396Z" fill="white"></path>
@@ -99,13 +107,26 @@
           <div class="footer-inner__col right footer-content">
             <div class="footer-content__top"> 
               <div class="footer-content__top-left"> 
-                <div class="footer-content__contacts"><a class="footer-content__contacts-tel" href="tel:+78312883661">8 831 288 36 61</a><a class="footer-content__contacts-mail" href="mailto:sale@equil.ru">sale@equil.ru</a></div><a class="footer-content__policy" href="#">Политика конфиденциальности</a>
+                <div class="footer-content__contacts"><a class="footer-content__contacts-tel" href="tel:+78312883661">8 831 288 36 61</a><a class="footer-content__contacts-mail" href="mailto:sale@equil.ru">sale@equil.ru</a></div>
+                <div class="footer-content__politics desktop"><a class="footer-content__policy" href="#">Политика конфиденциальности</a></div>
               </div>
               <div class="footer-content__top-right">
-                <nav class="footer-content__nav"><a class="footer-content__nav-link" href="#">каталог</a><a class="footer-content__nav-link" href="#">коллекции</a><a class="footer-content__nav-link" href="#">О компании</a><a class="footer-content__nav-link" href="#">Где купить</a><a class="footer-content__nav-link" href="#">Сотрудничество</a><a class="footer-content__nav-link" href="#">Контакты</a><a class="footer-content__nav-link" href="#">Блог</a><a class="footer-content__nav-link" href="#">Материалы для скачивания</a></nav>
+                <nav class="footer-content__nav">
+                  <ul> 
+                    <li class="footer-content__nav-link"> <a href="#">каталог</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">коллекции</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">О компании</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Где купить</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Сотрудничество</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Контакты</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Блог</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Материалы для скачивания</a></li>
+                  </ul>
+                </nav>
               </div>
+              <div class="footer-content__politics mobile"><a class="footer-content__policy" href="#">Политика конфиденциальности</a></div>
             </div>
-            <form class="footer-content__form"> 
+            <form class="footer-content__form" data-footer-subscribe> 
               <div class="footer-content__form-block"> 
                 <input class="footer-content__form-input" type="email" required placeholder="подпишитесь на новости">
               </div>
@@ -118,8 +139,10 @@
                 </div>
               </button>
             </form>
-            <p class="footer-content__accept">
-                Подписываясь на email-рассылку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+            <p class="footer-content__accept desktop">
+                Подписываясь на email-рассылку, вы соглашаетесь с&nbsp;<a href="#">политикой конфиденциальности</a></p>
+            <p class="footer-content__accept mobile">
+                Подписываясь на email-рассылку, вы соглашаетесь <br> с <a href="#">политикой конфиденциальности</a></p>
             <div class="footer-content__bot"> 
               <P class="footer-content__copy">© 2023 EQUIL. Все права защищены</P>
               <p class="footer-content__cloud">Сделано в<a href="#" target="_blank"> 
@@ -135,7 +158,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
     
   </body>

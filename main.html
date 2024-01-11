@@ -6,14 +6,14 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-99e1ae21.js"></script>
+    <script type="module" crossorigin src="assets/index-6c32e4dd.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <div class="wrapper">
       <div class="modal-block">
       </div>
-      <header class="header">
+      <header class="header" data-header data-overlay-off>
         <div class="header-inner container"> 
           <div class="header-inner__left"> <a class="header__logo" href="#"> 
               <svg width="193" height="54" viewbox="0 0 193 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,13 +27,15 @@
                   </clippath>
                 </defs>
               </svg></a>
-            <nav class="header-nav"><a class="header-nav__catalog header-nav__item" href="#"> 
+            <nav class="header-nav desktop">
+              <div class="header-nav__catalog header-nav__item" data-header-catalog data-overlay-on> 
                 <div class="header-nav__cube"> 
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
                   </svg>
                 </div>
-                <div class="header-nav__text">Каталог</div></a><a class="header-nav__collections header-nav__item" href="#"> 
+                <div class="header-nav__text">Каталог</div>
+              </div><a class="header-nav__collections header-nav__item" href="#"> 
                 <div class="header-nav__cube"> 
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
@@ -53,14 +55,14 @@
             </nav>
           </div>
           <div class="header-inner__right"> 
-            <div class="header-contact"><a class="header-contact__contacts header-nav__item" href="#"> 
+            <div class="header-contact desktop"><a class="header-contact__contacts header-nav__item" href="#"> 
                 <div class="header-nav__cube">
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
                   </svg>
                 </div>
                 <div class="header-nav__text">контакты</div></a>
-              <div class="header-contact__modal header-nav__item">
+              <div class="header-contact__modal header-nav__item" header-modal-btn>
                 <div class="header-nav__cube">
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
@@ -69,19 +71,158 @@
                 <div class="header-nav__text">Cвязаться с нами</div>
               </div>
             </div>
+            <div class="header-burger mobile"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewbox="0 0 32 20" fill="none">
+                <path d="M28 6L4 6" stroke="white" stroke-width="1.5"></path>
+                <path d="M28 14L4 14" stroke="white" stroke-width="1.5"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </header>
       <main>
-        <section class="main-slider">
+        <div class="overlay"></div>
+        <div class="subscribe" data-fade-modal="subscribe-modal">
+          <div class="subscribe__close" data-fade-close="subscribe-modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+              <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="subscribe-inner"> 
+            <div class="subscribe__logo"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewbox="0 0 116 116" fill="none">
+                <path d="M58.0012 4.52492H63.9429L98.3197 38.9017L111.476 52.0583L111.476 57.9999L111.476 63.9416L63.9429 111.475H58.0012H52.0596L4.52622 63.9416L4.52622 57.9999L4.52621 52.0583L52.0596 4.52492H58.0012Z" stroke="#065E78" stroke-width="1.5"></path>
+                <path d="M38.8337 57.9999L51.6115 71.4166L77.1671 44.5833" stroke="#065E78" stroke-width="1.5"></path>
+              </svg>
+            </div>
+            <p class="subscribe__title">Отправлено</p>
+            <p class="subscribe__text">Спасибо за подписку!</p>
+          </div>
+        </div>
+        <div class="header-modal" data-header-modal="data-header-modal" data-overlay-off="data-overlay-off" data-modal="header-modal">
+          <div class="header-modal__close" data-modal-close="header-modal"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+              <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="header-modal__content"> 
+            <p class="header-modal__title">связаться с нами</p>
+            <form class="header-modal__form" data-header-form="data-header-form" data-test-prevent="data-test-prevent"> 
+              <div class="header-modal__form-block"> 
+                <input class="header-modal__form-input" type="text" required="required" placeholder="имя *"/>
+              </div>
+              <div class="header-modal__form-block"> 
+                <input class="header-modal__form-input" type="tel" required="required" placeholder="Телефон *" data-mask-phone="data-mask-phone"/>
+              </div>
+              <div class="header-modal__form-block"> 
+                <input class="header-modal__form-input" type="email" required="required" placeholder="E-mail"/>
+              </div>
+              <button class="header-modal__form-button" type="submit">Отправить</button>
+              <p class="header-modal__form-policy">Нажимая на кнопку «Отправить», вы соглашаетесь с<a href="#">политикой конфиденциальности</a></p>
+            </form>
+          </div>
+          <div class="header-modal__sent"> 
+            <div class="header-modal__sent-logo"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewbox="0 0 116 116" fill="none">
+                <path d="M58.0012 4.52492H63.9429L98.3197 38.9017L111.476 52.0583L111.476 57.9999L111.476 63.9416L63.9429 111.475H58.0012H52.0596L4.52622 63.9416L4.52622 57.9999L4.52621 52.0583L52.0596 4.52492H58.0012Z" stroke="#065E78" stroke-width="1.5"></path>
+                <path d="M38.8337 57.9999L51.6115 71.4166L77.1671 44.5833" stroke="#065E78" stroke-width="1.5"></path>
+              </svg>
+            </div>
+            <p class="header-modal__sent-title">Отправлено</p>
+            <p class="header-modal__sent-text">Спасибо. Мы свяжемся с вами в ближайшее время.</p>
+            <div class="header-modal__sent-button" data-modal-close="header-modal">Закрыть</div>
+          </div>
+        </div>
+        <div class="header-catalog" data-catalog-wrapper="data-catalog-wrapper" data-overlay-off="data-overlay-off">
+          <div class="header-catalog__inner"> 
+            <div class="header-catalog__col left"> 
+              <div class="header-catalog__content"> 
+                <div class="header-catalog__content-col left"> 
+                  <p class="header-catalog__title">Equil</p>
+                  <div class="header-catalog__nav"> 
+                    <div class="header-catalog__nav-link"> <a href="#">Тумбы с раковиной</a></div>
+                    <div class="header-catalog__nav-link"> <a href="#">Зеркальные шкафы</a></div>
+                    <div class="header-catalog__nav-link"> <a href="#">Зеркала</a></div>
+                    <div class="header-catalog__nav-link"> <a href="#">Пеналы</a></div>
+                  </div>
+                </div>
+                <div class="header-catalog__content-col right"> 
+                  <div class="header-catalog__img"> 
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/brand-equil-slide1.webp 1x" alt="brand-equil-slide1.png"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/brand-equil-slide1.jpg 1x" alt="brand-equil-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-equil-slide1.png" alt="brand-equil-slide1.png"/>
+                    </picture>
+                  </div>
+                  <div class="header-catalog__logo">
+                    <svg width="193" height="54" viewbox="0 0 193 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_702_403)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M72.5192 11.0304L72.5141 13.2549H88.5295V11.0304H72.5192ZM72.482 25.7985L72.4758 28.0673H87.8672V25.7985H72.482ZM72.444 40.745L72.4383 42.9691H88.5295V40.745H72.444ZM123.103 37.8979C125.752 34.8287 127.165 31.0921 127.165 26.9999C127.165 17.9254 119.747 10.4521 110.739 10.4521C101.732 10.4521 94.3577 17.9254 94.3577 26.9999C94.3577 36.0745 101.732 43.5475 110.739 43.5475C114.757 43.5475 118.466 42.0797 121.513 39.4548L125.001 42.9691H128.18L123.102 37.898L123.103 37.8979ZM114.448 29.1349H111.269L119.968 37.8979C117.362 40.0775 114.139 41.2783 110.739 41.2783C102.835 41.2783 96.5656 34.962 96.5656 26.9999C96.5656 19.1709 102.968 12.7208 110.739 12.7208C118.467 12.7208 124.957 19.215 124.957 26.9999C124.957 30.4248 123.721 33.6721 121.513 36.2966L114.448 29.135L114.448 29.1349ZM144.032 41.2783C139.352 41.2783 135.687 37.5867 135.687 32.8713V11.0304H133.479V32.8713C133.479 38.832 138.115 43.5473 144.032 43.5473C149.905 43.5473 154.629 38.7877 154.629 32.8713V11.0304H152.377V32.8713C152.377 37.5422 148.668 41.2783 144.032 41.2783ZM164.078 42.969H166.286V11.0302H164.078V42.969ZM176.883 42.969H193V40.7448H179.091V11.0302H176.883V42.969H176.883ZM70.0562 11.0302L70.0506 13.2548L70.041 13.7415C69.9677 23.4869 70.0006 33.2654 69.9753 42.969H67.7422V11.0302H70.0563H70.0562Z" fill="white"></path>
+                        <path d="M26.5984 52.1584L2.25155 31.6447C3.19395 36.7303 5.65442 41.278 9.14124 44.7904C13.6159 49.2983 19.7825 52.1038 26.5984 52.1584ZM24.2691 26.1258L24.5177 26.6273L26.8005 28.5176L26.8006 19.643L32.25 15.0866L32.7753 15.0133L45.2166 13.2538L44.9666 11.435C41.6157 11.9024 38.2663 12.3834 34.916 12.8575L43.3773 5.78268C44.2102 6.44396 45.0031 7.15378 45.7519 7.90793C48.7514 10.9301 51.043 14.6658 52.3554 18.8397L33.4973 34.6331L35.9854 26.3969L34.2442 25.8649L30.9527 36.7641L26.8004 40.2417V30.8845L17.8199 23.4505L5.77917 19.7824L4.90522 19.5164L5.43345 17.7555L14.1506 20.4129L5.74906 13.4582C3.26597 17.3676 1.82643 22.0148 1.82643 27C1.82643 27.6577 1.85163 28.3093 1.90079 28.9543L13.8738 39.0417L10.2282 31.902L11.8476 31.0612L17.2214 41.5859L17.4694 42.0707L26.8001 49.9321V42.6248L37.0121 34.0728L37.4699 33.9941L50.5866 31.7095L50.2802 29.8977C46.7921 30.4967 43.3068 31.1131 39.8201 31.721L52.8861 20.7786C53.3539 22.776 53.6016 24.8589 53.6016 27.0001C53.6016 34.4559 50.6015 41.2063 45.7518 46.0919C40.9019 50.9776 34.201 54 26.8005 54C19.3998 54 12.699 50.9776 7.84931 46.0919C3.63135 41.8427 0.812869 36.1823 0.150188 29.8746L0.148222 29.873L0.149696 29.8712C0.0505155 28.9278 -0.000488281 27.9699 -0.000488281 27C-0.000488281 19.5446 2.99964 12.7942 7.84931 7.90805C12.699 3.02264 19.3998 0 26.8005 0C32.3858 0 37.5722 1.72199 41.8657 4.66663C36.8476 8.86859 31.8201 13.0595 26.8004 17.2595V11.9434L19.3601 5.67434L20.5305 4.26548L26.8005 9.54733V1.84023C19.9042 1.84023 13.6601 4.65685 9.141 9.20932C8.29372 10.0629 7.50703 10.9775 6.78806 11.9461L21.0613 23.7653L17.7589 17.118L19.3859 16.2987L24.2687 26.126L24.2691 26.1258Z" fill="white"></path>
+                      </g>
+                      <defs>
+                        <clippath id="clip0_702_403">
+                          <rect width="193" height="54" fill="white"></rect>
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-catalog__col"> 
+              <div class="header-catalog__content"> 
+                <div class="header-catalog__content-col left"> 
+                  <p class="header-catalog__title">volna</p>
+                  <div class="header-catalog__nav"> 
+                    <div class="header-catalog__nav-link"> <a href="#">Тумбы с раковиной</a></div>
+                    <div class="header-catalog__nav-link"> <a href="#">Зеркальные шкафы</a></div>
+                    <div class="header-catalog__nav-link"> <a href="#">Зеркала</a></div>
+                    <div class="header-catalog__nav-link"> <a href="#">Пеналы</a></div>
+                  </div>
+                </div>
+                <div class="header-catalog__content-col right"> 
+                  <div class="header-catalog__img"> 
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
+                    </picture>
+                  </div>
+                  <div class="header-catalog__logo">
+                    <svg width="234" height="52" viewbox="0 0 234 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_707_319)">
+                        <path d="M144.977 50.2277C144.205 49.4294 143.803 48.4381 143.803 47.3204V18.6014C143.803 16.3862 144.249 14.1043 145.101 11.9274C145.928 9.81191 147.136 7.81432 148.686 6.09398C150.414 4.17334 152.521 2.62028 154.951 1.55835C157.247 0.554615 159.805 0 162.575 0C164.521 0 166.406 0.246218 168.223 0.751929C170.016 1.25145 171.72 2.00887 173.325 3.03746L173.323 3.04055C174.734 3.9355 175.999 4.98984 177.119 6.21135C178.186 7.37557 179.106 8.66845 179.882 10.098C179.923 10.165 179.962 10.2335 180 10.3031C180.767 11.7274 181.338 13.1855 181.72 14.6677C182.113 16.1912 182.305 17.7276 182.305 19.2669V47.3204C182.305 48.4381 181.904 49.4294 181.132 50.2277L181.117 50.2427C180.31 51.0741 179.279 51.5287 178.058 51.5287C176.873 51.5287 175.864 51.0999 175.068 50.3119L174.984 50.2277C174.212 49.4294 173.809 48.4381 173.809 47.3204V19.5264C173.809 18.0015 173.519 16.5501 172.975 15.2272C172.417 13.8661 171.598 12.6315 170.563 11.5836C169.52 10.555 168.288 9.74085 166.937 9.18803C165.606 8.6431 164.132 8.34827 162.575 8.34827C161.138 8.34827 159.801 8.62353 158.603 9.12765C157.358 9.65222 156.229 10.4266 155.261 11.4006L155.247 11.4154C154.316 12.3851 153.573 13.5411 153.063 14.7986C152.568 16.0206 152.3 17.3488 152.3 18.7027V47.3204C152.3 48.4404 151.893 49.4363 151.11 50.2428C150.304 51.0742 149.272 51.5288 148.051 51.5288C146.866 51.5288 145.857 51.1 145.061 50.312L144.977 50.2278L144.977 50.2277ZM105.136 50.0356C104.459 49.2407 104.147 48.3378 104.147 47.3204V4.58054C104.147 3.63479 104.43 2.77607 104.934 2.06187L104.944 2.06915L104.949 2.06187C105.775 0.895249 106.958 0.27077 108.396 0.27077C109.626 0.27077 110.935 0.85882 111.776 1.95478L111.765 1.96196C112.299 2.6592 112.667 3.55595 112.667 4.58054V43.1239H133.401C134.311 43.1239 135.174 43.3778 135.947 43.9418C137.036 44.735 137.649 45.8266 137.649 47.2528C137.649 48.3752 137.27 49.3045 136.597 50.0735C135.711 51.0828 134.626 51.5172 133.401 51.5172H108.361C107.026 51.5172 105.964 51.0152 105.136 50.0357V50.0356ZM77.1459 51.0205C74.9199 51.6152 72.6072 51.9231 70.2689 51.9231C66.7611 51.9231 63.3758 51.2341 60.2542 49.9529C57.1927 48.6958 54.3959 46.8611 51.9965 44.5421C51.9166 44.4743 51.8389 44.4037 51.7632 44.3288C49.3359 41.9311 47.4257 39.09 46.1188 35.9454C44.8302 32.8444 44.1441 29.4914 44.1441 26.0237C44.1441 23.7332 44.4584 21.4787 45.0472 19.3084C45.6446 17.1023 46.5363 14.9854 47.6765 13.0091L47.6817 13.012L47.6924 12.9936C48.8429 11.0196 50.2051 9.2553 51.7504 7.72878C53.2342 6.26185 54.9423 4.9617 56.8466 3.85376C56.917 3.80705 56.9893 3.76204 57.064 3.71973C59.0945 2.55051 61.2104 1.67662 63.4087 1.09536C65.6321 0.507008 67.9198 0.21478 70.2687 0.21478C72.6255 0.21478 74.9436 0.515492 77.1766 1.10464C79.4058 1.69339 81.5383 2.57436 83.5283 3.7348L83.5236 3.74318C85.4671 4.85371 87.2306 6.19808 88.7791 7.7207C90.3008 9.21777 91.6356 10.9057 92.7476 12.7292C92.7963 12.8004 92.8435 12.8727 92.8877 12.9478C94.0627 14.9128 94.9649 17.0342 95.5711 19.2467C96.1733 21.4436 96.4857 23.7236 96.4857 26.0237C96.4857 28.3303 96.1887 30.5851 95.5855 32.7815C94.9934 34.94 94.0965 37.0389 92.8878 39.0737L92.8857 39.0724C91.7609 40.9967 90.3889 42.7524 88.8367 44.2922C87.3128 45.8036 85.5962 47.131 83.7489 48.2297C83.6777 48.2785 83.6042 48.3252 83.5284 48.369C81.5377 49.5301 79.3892 50.4217 77.1459 51.0205ZM63.5077 42.2146C65.588 43.0699 67.8736 43.5299 70.2689 43.5299C72.6653 43.5299 74.961 43.0689 77.0549 42.2114C79.2042 41.3314 81.1545 40.0431 82.7973 38.4159L82.8126 38.4002C84.46 36.7781 85.7638 34.8513 86.6548 32.7274C87.5221 30.6584 87.9899 28.3906 87.9899 26.0237C87.9899 23.6577 87.5246 21.4014 86.6601 19.3439C85.7767 17.2412 84.4661 15.3181 82.7972 13.6695L82.8046 13.662C81.167 12.0506 79.2225 10.7779 77.0845 9.91191C72.8046 8.1784 67.7741 8.16583 63.4937 9.90553C61.4476 10.7373 59.5784 11.9503 57.9747 13.483C57.9184 13.5464 57.8593 13.6089 57.7985 13.6695C56.1422 15.3055 54.8403 17.2226 53.9658 19.3145C53.1051 21.375 52.6399 23.6442 52.6399 26.0237C52.6399 28.4021 53.1057 30.6796 53.9699 32.7484C54.8449 34.8454 56.1453 36.7674 57.7986 38.4002L57.79 38.4082L57.7986 38.4159C59.4368 40.0485 61.3731 41.3379 63.5076 42.2146H63.5077ZM12.5618 13.8078L12.5538 13.8107C11.9781 12.1755 10.4044 11.0018 8.55292 11.0018C6.21417 11.0018 4.31802 12.8753 4.31802 15.1858C4.31802 15.7052 4.414 16.2024 4.58897 16.6612L4.57554 16.666L17.1979 48.5528C18.6093 53.2797 23.9114 52.67 25.322 49.4189L25.3868 49.2575L25.3892 49.2584L42.5512 6.07821C42.6136 5.92062 42.6647 5.76123 42.7074 5.60154L42.741 5.46631C42.8221 5.14703 42.86 4.82706 42.86 4.51287H42.8662C42.8662 3.45245 42.4514 2.48604 41.8359 1.76684L41.837 1.76555C41.0421 0.842352 39.8492 0.27077 38.6173 0.27077C37.7226 0.27077 36.8498 0.556711 36.0819 1.1242C35.5609 1.50965 35.1152 2.02444 34.794 2.6579C34.7397 2.76559 34.6914 2.87428 34.6474 2.98426L34.6385 2.98067L21.4565 36.2732L12.5621 13.8078H12.5618ZM4.23569 0.282947C6.57453 0.282947 8.47068 2.15628 8.47068 4.46686C8.47068 6.77774 6.57453 8.65108 4.23569 8.65108C1.89664 8.65108 0.000488281 6.77774 0.000488281 4.46686C0.000488281 2.15628 1.89664 0.282947 4.23569 0.282947ZM221.421 38.4147L221.429 38.4119C222.008 40.0461 223.584 41.2167 225.435 41.2133C227.774 41.2089 229.667 39.3323 229.662 37.0213C229.661 36.502 229.564 36.0051 229.388 35.5466L229.402 35.5417L216.719 3.67841C215.298 -1.04595 209.998 -0.426266 208.593 2.82737L208.529 2.98895L208.526 2.98796L191.447 46.2001C191.384 46.3579 191.334 46.5173 191.292 46.6771L191.258 46.8126C191.177 47.1318 191.14 47.4517 191.141 47.7661H191.135C191.137 48.8266 191.553 49.792 192.17 50.5102L192.169 50.5113C192.966 51.433 194.16 52.0022 195.391 52.0002C196.286 51.9984 197.158 51.7111 197.925 51.1422C198.445 50.7555 198.89 50.2399 199.21 49.6058C199.264 49.4979 199.312 49.3893 199.356 49.2792L199.365 49.2828L212.484 15.966L221.421 38.4147H221.421ZM229.773 51.9241C227.434 51.9285 225.534 50.0587 225.53 47.748C225.526 45.4373 227.418 43.5605 229.757 43.5561C232.096 43.5518 233.996 45.4217 234 47.7321C234.005 50.043 232.112 51.9197 229.773 51.9241Z" fill="white"></path>
+                      </g>
+                      <defs>
+                        <clippath id="clip0_707_319">
+                          <rect width="234" height="52" fill="white"></rect>
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="main-slider" data-main-slider="data-main-slider">
           <div class="main-slider__inner"> 
             <div class="swiper main-slider__swiper">
               <div class="swiper-wrapper"> 
                 <div class="swiper-slide"> 
-                  <div class="main-slider__bg"> 
+                  <div class="main-slider__bg desktop"> 
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/main-slider1.webp 1x" alt="main-slider1.png"/>
                       <source class="lazyload" type="image/jpeg" srcset="images/main-slider1.jpg 1x" alt="main-slider1.png"/><img class="picture__img lazyload" data-src="images/main-slider1.png" alt="main-slider1.png"/>
+                    </picture>
+                  </div>
+                  <div class="main-slider__bg mobile"> 
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/main-slider-mobile1.webp 1x" alt="main-slider-mobile1.png"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/main-slider-mobile1.jpg 1x" alt="main-slider-mobile1.png"/><img class="picture__img lazyload" data-src="images/main-slider-mobile1.png" alt="main-slider-mobile1.png"/>
                     </picture>
                   </div>
                   <div class="main-slider__slide"> 
@@ -587,18 +728,7 @@
             </svg>
           </div>
           <div class="main-actual__content">
-            <div class="main-actual__content-col left"> <a class="main-actual__item" href="#">
-                <div class="main-actual__item-img"> 
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/main-slider2.webp 1x" alt="main-slider2.png"/>
-                    <source class="lazyload" type="image/jpeg" srcset="images/main-slider2.jpg 1x" alt="main-slider2.png"/><img class="picture__img lazyload" data-src="images/main-slider2.png" alt="main-slider2.png"/>
-                  </picture>
-                </div>
-                <div class="main-actual__item-bot"> 
-                  <h3 class="main-actual__item-title">Новинка! Коллекция СORNER</h3>
-                  <p class="main-actual__item-date">25 октября 2023</p>
-                </div></a></div>
-            <div class="main-actual__content-col right"> 
+            <div class="main-actual__content-top mobile">
               <h3 class="main-actual__title">Актуальные новости</h3><a class="main-actual__link" href="#">
                 <p class="main-actual__link-text">блог</p>
                 <div class="main-actual__link-arrow">
@@ -606,30 +736,53 @@
                     <path d="M3 11.7747L17.85 11.7747" stroke="#42444A" stroke-width="1.5"></path>
                     <path d="M14.7002 6.59961L21.0002 10.9905V12.6269L14.7002 17.3996" stroke="#42444A" stroke-width="1.5"></path>
                   </svg>
-                </div></a><a class="main-actual__item big" href="#">
-                <div class="main-actual__item-img"> 
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/main-slider2.webp 1x" alt="main-slider2.png"/>
-                    <source class="lazyload" type="image/jpeg" srcset="images/main-slider2.jpg 1x" alt="main-slider2.png"/><img class="picture__img lazyload" data-src="images/main-slider2.png" alt="main-slider2.png"/>
-                  </picture>
-                </div>
-                <div class="main-actual__item-bot"> 
-                  <h3 class="main-actual__item-title">Новинка! Коллекция NICE</h3>
-                  <p class="main-actual__item-date">25 октября 2023</p>
                 </div></a>
+            </div>
+            <div class="main-actual__content-row">
+              <div class="main-actual__content-col left"> <a class="main-actual__item" href="#">
+                  <div class="main-actual__item-img"> 
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/main-slider2.webp 1x" alt="main-slider2.png"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/main-slider2.jpg 1x" alt="main-slider2.png"/><img class="picture__img lazyload" data-src="images/main-slider2.png" alt="main-slider2.png"/>
+                    </picture>
+                  </div>
+                  <div class="main-actual__item-bot"> 
+                    <h3 class="main-actual__item-title">Новинка! Коллекция СORNER</h3>
+                    <p class="main-actual__item-date">25 октября 2023</p>
+                  </div></a></div>
+              <div class="main-actual__content-col right"> 
+                <h3 class="main-actual__title desktop">Актуальные новости</h3><a class="main-actual__link desktop" href="#">
+                  <p class="main-actual__link-text">блог</p>
+                  <div class="main-actual__link-arrow">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 11.7747L17.85 11.7747" stroke="#42444A" stroke-width="1.5"></path>
+                      <path d="M14.7002 6.59961L21.0002 10.9905V12.6269L14.7002 17.3996" stroke="#42444A" stroke-width="1.5"></path>
+                    </svg>
+                  </div></a><a class="main-actual__item big" href="#">
+                  <div class="main-actual__item-img"> 
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/main-slider2.webp 1x" alt="main-slider2.png"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/main-slider2.jpg 1x" alt="main-slider2.png"/><img class="picture__img lazyload" data-src="images/main-slider2.png" alt="main-slider2.png"/>
+                    </picture>
+                  </div>
+                  <div class="main-actual__item-bot"> 
+                    <h3 class="main-actual__item-title">Новинка! Коллекция NICE</h3>
+                    <p class="main-actual__item-date">25 октября 2023</p>
+                  </div></a>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <div class="footer">
+      <footer class="footer">
         <div class="footer-inner">
-          <div class="footer-inner__up"> 
+          <div class="footer-inner__up" data-footer-top> 
             <svg width="68" height="68" viewbox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="68" width="68" height="68" rx="8" transform="rotate(-90 0 68)" fill="#F1F1F1"></rect>
               <path d="M25 40L32.3182 29.5L35.0455 29.5L43 40" stroke="#42444A" stroke-width="1.5"></path>
             </svg>
           </div>
-          <div class="footer-inner__col left footer-rect"> 
+          <div class="footer-inner__col left footer-rect desktop"> 
             <div class="footer-rect__vector"> 
               <svg width="802" height="750" viewbox="0 0 802 750" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-181.223 811.396L-167.263 783.403L-167.242 783.416L106.925 234.932L198.277 280.657L12.854 651.658L814.28 -8L872.619 76.3955L400.884 464.554L890.341 316.238L920 414.517L870.929 429.367L194.855 634.092L-309.391 1049L-379 979.468L-309.398 916.896L-181.223 811.396Z" fill="white"></path>
@@ -647,13 +800,26 @@
           <div class="footer-inner__col right footer-content">
             <div class="footer-content__top"> 
               <div class="footer-content__top-left"> 
-                <div class="footer-content__contacts"><a class="footer-content__contacts-tel" href="tel:+78312883661">8 831 288 36 61</a><a class="footer-content__contacts-mail" href="mailto:sale@equil.ru">sale@equil.ru</a></div><a class="footer-content__policy" href="#">Политика конфиденциальности</a>
+                <div class="footer-content__contacts"><a class="footer-content__contacts-tel" href="tel:+78312883661">8 831 288 36 61</a><a class="footer-content__contacts-mail" href="mailto:sale@equil.ru">sale@equil.ru</a></div>
+                <div class="footer-content__politics desktop"><a class="footer-content__policy" href="#">Политика конфиденциальности</a></div>
               </div>
               <div class="footer-content__top-right">
-                <nav class="footer-content__nav"><a class="footer-content__nav-link" href="#">каталог</a><a class="footer-content__nav-link" href="#">коллекции</a><a class="footer-content__nav-link" href="#">О компании</a><a class="footer-content__nav-link" href="#">Где купить</a><a class="footer-content__nav-link" href="#">Сотрудничество</a><a class="footer-content__nav-link" href="#">Контакты</a><a class="footer-content__nav-link" href="#">Блог</a><a class="footer-content__nav-link" href="#">Материалы для скачивания</a></nav>
+                <nav class="footer-content__nav">
+                  <ul> 
+                    <li class="footer-content__nav-link"> <a href="#">каталог</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">коллекции</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">О компании</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Где купить</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Сотрудничество</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Контакты</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Блог</a></li>
+                    <li class="footer-content__nav-link"> <a href="#">Материалы для скачивания</a></li>
+                  </ul>
+                </nav>
               </div>
+              <div class="footer-content__politics mobile"><a class="footer-content__policy" href="#">Политика конфиденциальности</a></div>
             </div>
-            <form class="footer-content__form"> 
+            <form class="footer-content__form" data-footer-subscribe> 
               <div class="footer-content__form-block"> 
                 <input class="footer-content__form-input" type="email" required placeholder="подпишитесь на новости">
               </div>
@@ -666,8 +832,10 @@
                 </div>
               </button>
             </form>
-            <p class="footer-content__accept">
-                Подписываясь на email-рассылку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+            <p class="footer-content__accept desktop">
+                Подписываясь на email-рассылку, вы соглашаетесь с&nbsp;<a href="#">политикой конфиденциальности</a></p>
+            <p class="footer-content__accept mobile">
+                Подписываясь на email-рассылку, вы соглашаетесь <br> с <a href="#">политикой конфиденциальности</a></p>
             <div class="footer-content__bot"> 
               <P class="footer-content__copy">© 2023 EQUIL. Все права защищены</P>
               <p class="footer-content__cloud">Сделано в<a href="#" target="_blank"> 
@@ -683,7 +851,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
     
   </body>
