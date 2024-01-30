@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-6c32e4dd.js"></script>
+    <script type="module" crossorigin src="assets/index-2f010a32.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -42,7 +42,7 @@
                   </svg>
                 </div>
                 <div class="header-nav__text">Коллекции</div></a>
-              <div class="header-nav__about header-nav__item about">
+              <div class="header-nav__about header-nav__item about" data-header-about>
                 <div class="header-nav__cube cubes"> 
                   <svg width="30" height="7" viewbox="0 0 30 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
@@ -110,23 +110,30 @@
                 <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
               </svg>
             </div>
-            <div class="header-modal__content"> 
+            <div class="header-modal__content" data-headerModal-content="data-headerModal-content"> 
               <p class="header-modal__title">связаться с нами</p>
               <form class="header-modal__form" data-header-form="data-header-form" data-test-prevent="data-test-prevent"> 
-                <div class="header-modal__form-block"> 
-                  <input class="header-modal__form-input" type="text" required="required" placeholder="имя *"/>
+                <div class="header-modal__form-top">
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">имя *</div>
+                    <input class="input" data-input="" required="required" type="text" placeholder="имя *"/>
+                  </div>
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">Телефон *</div>
+                    <input class="input" data-input="" required="required" type="tel" placeholder="Телефон *" data-mask-phone="data-mask-phone"/>
+                  </div>
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">E-mail</div>
+                    <input class="input" data-input="" required="required" type="email" placeholder="E-mail"/>
+                  </div>
                 </div>
-                <div class="header-modal__form-block"> 
-                  <input class="header-modal__form-input" type="tel" required="required" placeholder="Телефон *" data-mask-phone="data-mask-phone"/>
+                <div class="header-modal__form-bot">
+                  <button class="header-modal__form-button" type="submit">Отправить</button>
+                  <p class="header-modal__form-policy">Нажимая на кнопку «Отправить», вы соглашаетесь с<a href="#">политикой конфиденциальности</a></p>
                 </div>
-                <div class="header-modal__form-block"> 
-                  <input class="header-modal__form-input" type="email" required="required" placeholder="E-mail"/>
-                </div>
-                <button class="header-modal__form-button" type="submit">Отправить</button>
-                <p class="header-modal__form-policy">Нажимая на кнопку «Отправить», вы соглашаетесь с<a href="#">политикой конфиденциальности</a></p>
               </form>
             </div>
-            <div class="header-modal__sent"> 
+            <div class="header-modal__sent" data-headerModal-sent="data-headerModal-sent"> 
               <div class="header-modal__sent-logo"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="116" height="116" viewbox="0 0 116 116" fill="none">
                   <path d="M58.0012 4.52492H63.9429L98.3197 38.9017L111.476 52.0583L111.476 57.9999L111.476 63.9416L63.9429 111.475H58.0012H52.0596L4.52622 63.9416L4.52622 57.9999L4.52621 52.0583L52.0596 4.52492H58.0012Z" stroke="#065E78" stroke-width="1.5"></path>
@@ -145,17 +152,35 @@
                   <div class="header-catalog__content-col left"> 
                     <p class="header-catalog__title">Equil</p>
                     <div class="header-catalog__nav"> 
-                      <div class="header-catalog__nav-link"> <a href="#">Тумбы с раковиной</a></div>
-                      <div class="header-catalog__nav-link"> <a href="#">Зеркальные шкафы</a></div>
-                      <div class="header-catalog__nav-link"> <a href="#">Зеркала</a></div>
-                      <div class="header-catalog__nav-link"> <a href="#">Пеналы</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="cabinet" data-hover-brand="equil">Тумбы с раковиной</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="closet" data-hover-brand="equil">Зеркальные шкафы</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="mirrors" data-hover-brand="equil">Зеркала</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="penals" data-hover-brand="equil">Пеналы</a></div>
                     </div>
                   </div>
-                  <div class="header-catalog__content-col right"> 
-                    <div class="header-catalog__img"> 
+                  <div class="header-catalog__content-col right" data-img-container="equil">
+                    <div class="header-catalog__img active" data-hover-img="cabinet"> 
                       <picture class="picture">
                         <source class="lazyload" type="image/webp" srcset="webp/brand-equil-slide1.webp 1x" alt="brand-equil-slide1.png"/>
                         <source class="lazyload" type="image/jpeg" srcset="images/brand-equil-slide1.jpg 1x" alt="brand-equil-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-equil-slide1.png" alt="brand-equil-slide1.png"/>
+                      </picture>
+                    </div>
+                    <div class="header-catalog__img" data-hover-img="closet"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
+                      </picture>
+                    </div>
+                    <div class="header-catalog__img" data-hover-img="mirrors"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
+                      </picture>
+                    </div>
+                    <div class="header-catalog__img" data-hover-img="penals"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
                       </picture>
                     </div>
                     <div class="header-catalog__logo">
@@ -179,14 +204,32 @@
                   <div class="header-catalog__content-col left"> 
                     <p class="header-catalog__title">volna</p>
                     <div class="header-catalog__nav"> 
-                      <div class="header-catalog__nav-link"> <a href="#">Тумбы с раковиной</a></div>
-                      <div class="header-catalog__nav-link"> <a href="#">Зеркальные шкафы</a></div>
-                      <div class="header-catalog__nav-link"> <a href="#">Зеркала</a></div>
-                      <div class="header-catalog__nav-link"> <a href="#">Пеналы</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="cabinet" data-hover-brand="volna">Тумбы с раковиной</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="closet" data-hover-brand="volna">Зеркальные шкафы</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="mirrors" data-hover-brand="volna">Зеркала</a></div>
+                      <div class="header-catalog__nav-link"> <a href="#" data-hover-link="penals" data-hover-brand="volna">Пеналы</a></div>
                     </div>
                   </div>
-                  <div class="header-catalog__content-col right"> 
-                    <div class="header-catalog__img"> 
+                  <div class="header-catalog__content-col right" data-img-container="volna"> 
+                    <div class="header-catalog__img active" data-hover-img="cabinet"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-equil-slide1.webp 1x" alt="brand-equil-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-equil-slide1.jpg 1x" alt="brand-equil-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-equil-slide1.png" alt="brand-equil-slide1.png"/>
+                      </picture>
+                    </div>
+                    <div class="header-catalog__img" data-hover-img="closet"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
+                      </picture>
+                    </div>
+                    <div class="header-catalog__img" data-hover-img="mirrors"> 
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
+                      </picture>
+                    </div>
+                    <div class="header-catalog__img" data-hover-img="penals"> 
                       <picture class="picture">
                         <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
                         <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
@@ -209,6 +252,65 @@
               </div>
             </div>
           </div>
+          <div class="header-menu" data-menu-wrapper="data-menu-wrapper" data-overlay-off="data-overlay-off">
+            <div class="header-menu__content"> 
+              <div class="header-menu__col header-menu__rect"> 
+                <div class="header-menu__rect-vector"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="961" height="443" viewbox="0 0 961 443" fill="none">
+                    <g clip-path="url(#clip0_2102_1876)">
+                      <path d="M-52.223 577.396L-38.2627 549.403L-38.2419 549.416L235.925 0.931732L327.277 46.6572L141.854 417.658L943.28 -242L1001.62 -157.604L529.884 230.554L1019.34 82.2383L1049 180.517L999.929 195.367L323.855 400.092L-180.391 815L-250 745.468L-180.398 682.896L-52.223 577.396Z" fill="#0A6986"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2102_1876">
+                        <rect width="961" height="443" fill="white"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="header-menu__rect-content"> 
+                  <div class="header-menu__rect-logo"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="123" height="124" viewbox="0 0 123 124" fill="none">
+                      <path d="M61.0362 119.305L5.16771 72.5796C7.33024 84.1635 12.9763 94.5221 20.9774 102.523C31.2454 112.791 45.3957 119.181 61.0362 119.305ZM55.6911 60.0087L56.2616 61.1511L61.4999 65.4567L61.5001 45.2425L74.0049 34.8639L75.2102 34.697L103.759 30.6892L103.185 26.5464C95.4961 27.611 87.8103 28.7066 80.1224 29.7865L99.5386 13.6717C101.45 15.1779 103.269 16.7947 104.987 18.5125C111.87 25.3963 117.129 33.9053 120.14 43.4127L76.8671 79.3864L82.5763 60.6263L78.5809 59.4145L71.0279 84.2405L61.4996 92.1616V70.848L40.8922 53.9151L13.2625 45.56L11.2571 44.954L12.4692 40.9431L32.4722 46.9961L13.1934 31.1548C7.4955 40.0595 4.19221 50.6448 4.19221 62C4.19221 63.4981 4.25002 64.9823 4.36283 66.4514L31.8371 89.4282L23.4716 73.1657L27.1878 71.2505L39.5187 95.2234L40.0879 96.3278L61.499 114.234V97.5898L84.9323 78.1103L85.9828 77.9309L116.082 72.7271L115.378 68.6004C107.374 69.9648 99.3767 71.3686 91.3758 72.7534L121.358 47.8291C122.432 52.3787 123 57.1231 123 62.0003C123 78.9828 116.116 94.3588 104.987 105.487C93.8581 116.616 78.4816 123.5 61.4999 123.5C44.5175 123.5 29.1413 116.616 18.0128 105.487C8.33394 95.8083 1.8664 82.9153 0.345755 68.5476L0.341243 68.5439L0.344627 68.54C0.117038 66.391 0 64.2093 0 62C0 45.0183 6.88436 29.6424 18.0128 18.5128C29.1413 7.38491 44.5175 0.5 61.4999 0.5C74.3165 0.5 86.2177 4.42231 96.0697 11.1295C84.5549 20.7007 73.0184 30.2467 61.4996 39.8133V27.7043L44.4264 13.4249L47.1121 10.2158L61.4999 22.2467V4.69164C45.6749 4.69164 31.3467 11.1073 20.9769 21.4768C19.0326 23.421 17.2274 25.5043 15.5776 27.7105L48.3301 54.632L40.7523 39.491L44.4857 37.6249L55.6903 60.0092L55.6911 60.0087Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <p class="header-menu__rect-text">Мебель EQUIL — это баланс природной естественности и&nbsp;современных технологий</p>
+                </div>
+              </div>
+              <div class="header-menu__col header-menu__col_texts"> 
+                <div class="header-menu__row"> 
+                  <div class="header-menu__subcol left"> 
+                    <div class="header-menu__subcol-top"> <a class="header-menu__link" href="tel:+78312883661">+7 831 288-36-61</a><a class="header-menu__link" href="mailto:sale@equil.ru">sale@equil.ru</a></div>
+                    <div class="header-menu__subcol-bot"><a class="header-menu__policy" href="#">Политика конфиденциальности</a></div>
+                  </div>
+                  <div class="header-menu__subcol"> 
+                    <nav class="header-menu__nav">
+                      <div class="header-menu__nav-item"> <a href="#">О компании</a></div>
+                      <div class="header-menu__nav-item"> <a href="#">Где купить</a></div>
+                      <div class="header-menu__nav-item"> <a href="#">Сотрудничество</a></div>
+                      <div class="header-menu__nav-item"> <a href="#">Контакты</a></div>
+                      <div class="header-menu__nav-item"> <a href="#">Блог</a></div>
+                      <div class="header-menu__nav-item"> <a href="#">Материалы для скачивания</a></div>
+                    </nav>
+                  </div>
+                </div>
+                <div class="header-menu__footer">
+                  <div class="header-menu__footer-copy">© 2023 EQUIL. Все права защищены</div>
+                  <div class="header-menu__footer-cloud"> 
+                    <p>Сделано в</p><a href="#" target="_blank"> 
+                      <svg width="92" height="11" viewbox="0 0 92 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5163 1.65071C12.5163 4.29299 11.9711 6.17375 10.8922 7.24394C10.0701 8.06028 9.17882 8.14393 8.83555 8.13816L8.26152 8.16124L6.7038 6.28914C7.22879 5.91126 7.5432 5.28818 7.84608 4.68242C7.94704 4.48338 8.04514 4.28723 8.15764 4.08819L10.0009 0.502643H7.11057L6.0173 2.64877L5.80961 3.06128C5.55288 3.57473 5.16343 4.35357 4.9067 4.35357H2.74325V0.502643H0V10.4949H2.74325V6.64394H3.70096L6.9519 10.4949H10.1278H10.2663C10.4538 10.4949 14.8355 10.4055 15.2336 2.79012H18.297V10.4949H21.0402V0.499756H12.5192V1.65071H12.5163Z" fill="#065E78"></path>
+                        <path d="M83.2172 1.65031C83.2172 8.01373 80.7711 8.20988 80.7451 8.20988L80.7451 8.22719L80.7451 10.5002H80.9643C81.1518 10.5002 85.5335 10.4108 85.9316 2.7955H88.9979V10.5002H91.7412V0.505127H83.2201V1.65031H83.2172Z" fill="#065E78"></path>
+                        <path d="M52.8375 0.505127H44.0049V1.65031C44.0049 7.9993 41.3107 8.20988 41.2818 8.20988L40.9414 8.22719L41.4434 10.5002H53.9106V8.20988H52.8404V0.505127H52.8375ZM50.0943 8.20988H45.1991C46.0385 6.88874 46.5202 5.07144 46.6414 2.7955H50.0943V8.20988Z" fill="#065E78"></path>
+                        <path d="M61.6984 6.09258L59.6012 0.505127H55.4272V10.4974H58.1705V4.03299L60.5935 10.4974H62.8002L65.2262 4.03299V10.4974H67.9695V0.505127H63.7955L61.6984 6.09258Z" fill="#065E78"></path>
+                        <path d="M72.484 6.13586V0.505127H69.7407V10.4974H71.3619L76.9926 4.86663V10.4974H79.7359V0.505127H78.1176L72.484 6.13586Z" fill="#065E78"></path>
+                        <path d="M42.574 0.505127H39.649L37.1683 7.27816L34.6472 0.505127H31.6934L34.3645 7.50027H37.0875L36.1385 10.0935L35.9366 10.4974H38.8731L38.9423 10.307C39.7356 8.1493 42.1471 1.58109 42.4183 0.897436L42.574 0.505127Z" fill="#065E78"></path>
+                        <path d="M29.5615 0.779167L29.4548 0.505127H25.2145L21.7039 10.0935L21.502 10.4974H24.4385L25.0125 8.9368H29.6625L30.2365 10.4974H32.7057H33.173L32.9711 10.0935L29.5615 0.779167ZM27.3346 2.62531C27.6375 3.44165 28.0183 4.47144 28.425 5.57913H28.4221L28.8144 6.64643H25.8548L26.2471 5.57913H26.2442C26.6538 4.47144 27.0346 3.43876 27.3346 2.62531Z" fill="#065E78"></path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="breadcrumbs container"><a class="breadcrumbs-item" href="#">главная</a>
           <div class="breadcrumbs-dot">
@@ -226,8 +328,8 @@
         <section class="catalog-filter container"> 
           <h1 class="catalog-filter__title">Тумбы с раковиной</h1>
           <div class="catalog-filter__accords"> 
-            <div class="accordion-container">
-              <div class="ac catalog-accordion">
+            <div class="accordion-container desktop">
+              <div class="ac catalog-accordion catalog-accordion_spoiler">
                 <div class="ac-header ac-trigger catalog-accordion__top">
                   <p class="catalog-accordion__title">Ширина</p>
                   <div class="catalog-accordion__arrow">
@@ -315,8 +417,8 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-container">
-              <div class="ac catalog-accordion">
+            <div class="accordion-container desktop">
+              <div class="ac catalog-accordion catalog-accordion_spoiler">
                 <div class="ac-header ac-trigger catalog-accordion__top">
                   <p class="catalog-accordion__title">Тип крепления</p>
                   <div class="catalog-accordion__arrow">
@@ -354,8 +456,8 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-container">
-              <div class="ac catalog-accordion">
+            <div class="accordion-container desktop">
+              <div class="ac catalog-accordion catalog-accordion_spoiler">
                 <div class="ac-header ac-trigger catalog-accordion__top">
                   <p class="catalog-accordion__title">Система хранения</p>
                   <div class="catalog-accordion__arrow">
@@ -403,8 +505,8 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-container">
-              <div class="ac catalog-accordion">
+            <div class="accordion-container desktop">
+              <div class="ac catalog-accordion catalog-accordion_spoiler">
                 <div class="ac-header ac-trigger catalog-accordion__top">
                   <p class="catalog-accordion__title">Цвет</p>
                   <div class="catalog-accordion__arrow">
@@ -472,8 +574,8 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-container">
-              <div class="ac catalog-accordion">
+            <div class="accordion-container desktop">
+              <div class="ac catalog-accordion catalog-accordion_spoiler">
                 <div class="ac-header ac-trigger catalog-accordion__top">
                   <p class="catalog-accordion__title">бренд</p>
                   <div class="catalog-accordion__arrow">
@@ -511,8 +613,8 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-container">
-              <div class="ac catalog-accordion">
+            <div class="accordion-container desktop">
+              <div class="ac catalog-accordion catalog-accordion_spoiler">
                 <div class="ac-header ac-trigger catalog-accordion__top">
                   <p class="catalog-accordion__title">коллекция</p>
                   <div class="catalog-accordion__arrow">
@@ -580,6 +682,16 @@
                 </div>
               </div>
             </div>
+            <div class="catalog-filter__accords-filter catalog-filter__filter mobile" data-filter-mobile="data-filter-mobile">
+              <div class="catalog-filter__filter-text">Фильтры</div>
+              <div class="catalog-filter__filter-icon"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                  <path d="M8.7431 7.99999L13.6568 7.99999" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  <path d="M2.34315 7.99999L5.65685 7.99999" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  <path d="M8 13.6568V2.34314" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
           </div>
           <div class="catalog-filter__thumbs"> 
             <div class="catalog-filter__thumb">
@@ -634,6 +746,442 @@
             </div>
           </div>
         </section>
+        <div class="filter-menu" data-filter-menu="data-filter-menu">
+          <div class="filter-menu__main"> 
+            <div class="filter-menu__close" data-filter-close="data-filter-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__main-title">Фильтры</div>
+            <ul class="filter-menu__main-list"> 
+              <li class="filter-menu__main-item filter-menu__item" data-filter-link="width"> 
+                <div class="filter-menu__item-heading">
+                  <p class="filter-menu__item-text">Ширина</p>
+                  <div class="filter-menu__item-circle" data-filter-circle="width"></div>
+                </div>
+                <div class="filter-menu__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                    <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+                  </svg>
+                </div>
+              </li>
+              <li class="filter-menu__main-item filter-menu__item" data-filter-link="type"> 
+                <div class="filter-menu__item-heading">
+                  <p class="filter-menu__item-text">Тип крепления</p>
+                  <div class="filter-menu__item-circle" data-filter-circle="type"></div>
+                </div>
+                <div class="filter-menu__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                    <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+                  </svg>
+                </div>
+              </li>
+              <li class="filter-menu__main-item filter-menu__item" data-filter-link="system"> 
+                <div class="filter-menu__item-heading">
+                  <p class="filter-menu__item-text">Система хранения</p>
+                  <div class="filter-menu__item-circle" data-filter-circle="system"></div>
+                </div>
+                <div class="filter-menu__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                    <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+                  </svg>
+                </div>
+              </li>
+              <li class="filter-menu__main-item filter-menu__item" data-filter-link="color"> 
+                <div class="filter-menu__item-heading">
+                  <p class="filter-menu__item-text">Цвет</p>
+                  <div class="filter-menu__item-circle" data-filter-circle="color"></div>
+                </div>
+                <div class="filter-menu__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                    <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+                  </svg>
+                </div>
+              </li>
+              <li class="filter-menu__main-item filter-menu__item" data-filter-link="brand"> 
+                <div class="filter-menu__item-heading">
+                  <p class="filter-menu__item-text">бренд</p>
+                  <div class="filter-menu__item-circle" data-filter-circle="brand"></div>
+                </div>
+                <div class="filter-menu__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                    <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+                  </svg>
+                </div>
+              </li>
+              <li class="filter-menu__main-item filter-menu__item" data-filter-link="collection"> 
+                <div class="filter-menu__item-heading">
+                  <p class="filter-menu__item-text">коллекция</p>
+                  <div class="filter-menu__item-circle" data-filter-circle="collection"></div>
+                </div>
+                <div class="filter-menu__item-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                    <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <div class="filter-menu__buttons"> 
+              <div class="filter-menu__button grey" data-filter-reset="data-filter-reset">сбросить</div>
+              <div class="filter-menu__button blue" data-filter-confirm="data-filter-confirm">Применить</div>
+            </div>
+          </div>
+          <div class="filter-menu__sub" data-filter-sub="width"> 
+            <div class="filter-menu__close" data-filter-close="data-filter-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-back" data-filter-back="width">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-title">ширина</div>
+            <div class="filter-menu__sub-checklist">
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">40 см</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">45 см</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">50 см</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">55 см</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">60 см</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">70 см</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">80 см</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="width">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">90 см</div>
+              </label>
+            </div>
+          </div>
+          <div class="filter-menu__sub" data-filter-sub="type"> 
+            <div class="filter-menu__close" data-filter-close="data-filter-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-back" data-filter-back="type">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-title">Тип крепления</div>
+            <div class="filter-menu__sub-checklist">
+              <label class="catalog-accordion__check" data-filter-label="type">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">Подвесной</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="type">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">Напольный</div>
+              </label>
+            </div>
+          </div>
+          <div class="filter-menu__sub" data-filter-sub="system"> 
+            <div class="filter-menu__close" data-filter-close="data-filter-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-back" data-filter-back="system">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-title">СИСТЕМА ХРАНЕНИЯ</div>
+            <div class="filter-menu__sub-checklist">
+              <label class="catalog-accordion__check" data-filter-label="system">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">Выдвижные ящики</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="system">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">Полки</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="system">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">Комбинированная</div>
+              </label>
+            </div>
+          </div>
+          <div class="filter-menu__sub" data-filter-sub="color"> 
+            <div class="filter-menu__close" data-filter-close="data-filter-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-back" data-filter-back="color">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-title">Цвет</div>
+            <div class="filter-menu__sub-checklist">
+              <label class="catalog-accordion__check" data-filter-label="color">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">белый глянец</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="color">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">белый матовый</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="color">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">белый глянец / оникс серый</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="color">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">бетон / белый</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="color">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">белый матовый / дуб сонома</div>
+              </label>
+            </div>
+          </div>
+          <div class="filter-menu__sub" data-filter-sub="brand"> 
+            <div class="filter-menu__close" data-filter-close="data-filter-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-back" data-filter-back="brand">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-title">бренд</div>
+            <div class="filter-menu__sub-checklist">
+              <label class="catalog-accordion__check" data-filter-label="brand">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">EQUIL</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="brand">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">VOLNA</div>
+              </label>
+            </div>
+          </div>
+          <div class="filter-menu__sub" data-filter-sub="collection"> 
+            <div class="filter-menu__close" data-filter-close="data-filter-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-back" data-filter-back="collection">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                <path d="M4 3.33325L12 7.12787L12 8.54201L4 12.6666" stroke="#42444A"></path>
+              </svg>
+            </div>
+            <div class="filter-menu__sub-title">коллекция</div>
+            <div class="filter-menu__sub-checklist">
+              <label class="catalog-accordion__check" data-filter-label="collection">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">ADEL</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="collection">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">CONTY</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="collection">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">JOLI</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="collection">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">LAKE</div>
+              </label>
+              <label class="catalog-accordion__check" data-filter-label="collection">
+                <input class="catalog-accordion__check-input" type="checkbox" name="check"/>
+                <div class="catalog-accordion__check-box"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#065E78"></rect>
+                    <path d="M6 12L10 16L18 8" stroke="white" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+                <div class="catalog-accordion__check-text">MILENA</div>
+              </label>
+            </div>
+          </div>
+        </div>
         <div class="catalog-list container"> 
           <div class="catalog-list__row triple"> 
             <div class="catalog-card">
@@ -1613,7 +2161,7 @@
             <p class="footer-content__accept desktop">
                 Подписываясь на email-рассылку, вы соглашаетесь с&nbsp;<a href="#">политикой конфиденциальности</a></p>
             <p class="footer-content__accept mobile">
-                Подписываясь на email-рассылку, вы соглашаетесь <br> с <a href="#">политикой конфиденциальности</a></p>
+                Подписываясь на email-рассылку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
             <div class="footer-content__bot"> 
               <P class="footer-content__copy">© 2023 EQUIL. Все права защищены</P>
               <p class="footer-content__cloud">Сделано в<a href="#" target="_blank"> 
