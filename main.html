@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-2f010a32.js"></script>
+    <script type="module" crossorigin src="assets/index-068c5cbb.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -71,11 +71,20 @@
                 <div class="header-nav__text">Cвязаться с нами</div>
               </div>
             </div>
-            <div class="header-burger mobile"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewbox="0 0 32 20" fill="none">
-                <path d="M28 6L4 6" stroke="white" stroke-width="1.5"></path>
-                <path d="M28 14L4 14" stroke="white" stroke-width="1.5"></path>
-              </svg>
+            <div class="header-burger mobile" data-header-about> 
+              <div class="header-burger__icon menu"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewbox="0 0 32 20" fill="none">
+                  <path d="M28 6L4 6" stroke="white" stroke-width="1.5"></path>
+                  <path d="M28 14L4 14" stroke="white" stroke-width="1.5"></path>
+                </svg>
+              </div>
+              <div class="header-burger__icon close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                  <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -281,8 +290,17 @@
                   <div class="header-menu__subcol-top"> <a class="header-menu__link" href="tel:+78312883661">+7 831 288-36-61</a><a class="header-menu__link" href="mailto:sale@equil.ru">sale@equil.ru</a></div>
                   <div class="header-menu__subcol-bot"><a class="header-menu__policy" href="#">Политика конфиденциальности</a></div>
                 </div>
-                <div class="header-menu__subcol"> 
+                <div class="header-menu__subcol right"> 
                   <nav class="header-menu__nav">
+                    <div class="header-menu__nav-item mobile" data-collection-link="data-collection-link">
+                       Каталог
+                      <div class="header-menu__nav-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                          <path d="M12.6665 4L8.87189 12L7.45775 12L3.33317 4" stroke="#8E8F92" stroke-width="1.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="header-menu__nav-item mobile"> <a href="#">Коллекции</a></div>
                     <div class="header-menu__nav-item"> <a href="#">О компании</a></div>
                     <div class="header-menu__nav-item"> <a href="#">Где купить</a></div>
                     <div class="header-menu__nav-item"> <a href="#">Сотрудничество</a></div>
@@ -293,7 +311,7 @@
                 </div>
               </div>
               <div class="header-menu__footer">
-                <div class="header-menu__footer-copy">© 2023 EQUIL. Все права защищены</div>
+                <p class="header-menu__footer-copy">© 2023 EQUIL. Все права защищены</p>
                 <div class="header-menu__footer-cloud"> 
                   <p>Сделано в</p><a href="#" target="_blank"> 
                     <svg width="92" height="11" viewbox="0 0 92 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -307,6 +325,42 @@
                     </svg></a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-sub" data-header-sub="collections"> 
+          <div class="header-sub__buttons"> 
+            <div class="header-sub__buttons-back" data-sub-back="data-sub-back"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                <path d="M12.6665 4L8.87189 12L7.45775 12L3.33317 4" stroke="#8E8F92" stroke-width="1.5"></path>
+              </svg>
+            </div>
+            <div class="header-sub__buttons-close" data-header-about="data-header-about">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="header-sub__content"> 
+            <div class="header-sub__brand"> 
+              <p class="header-sub__brand-title">Equil</p>
+              <ul class="header-sub__brand-list"> 
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Тумбы с раковиной </a></li>
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Зеркальные шкафы </a></li>
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Зеркала </a></li>
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Пеналы </a></li>
+              </ul>
+            </div>
+            <div class="header-sub__brand"> 
+              <p class="header-sub__brand-title">volna</p>
+              <ul class="header-sub__brand-list"> 
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Тумбы с раковиной </a></li>
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Зеркальные шкафы </a></li>
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Зеркала </a></li>
+                <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Пеналы </a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -902,7 +956,28 @@
           <div class="footer-inner__col right footer-content">
             <div class="footer-content__top"> 
               <div class="footer-content__top-left"> 
-                <div class="footer-content__contacts"><a class="footer-content__contacts-tel" href="tel:+78312883661">8 831 288 36 61</a><a class="footer-content__contacts-mail" href="mailto:sale@equil.ru">sale@equil.ru</a></div>
+                <div class="footer-content__contacts"><a class="footer-content__contacts-tel" href="tel:+78312883661">8 831 288 36 61</a><a class="footer-content__contacts-mail" href="mailto:sale@equil.ru">sale@equil.ru</a>
+                  <div class="footer-content__contacts-socials"> <a class="footer-content__contacts-media" href="#" target="_blank">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0718 20C4.87188 20 0.194878 13.994 0 4H4.10743C4.24235 11.3353 7.27038 14.4424 9.66888 15.0831V4H13.5366V10.3263C15.9051 10.0541 18.3933 7.17117 19.2328 4H23.1004C22.4558 7.90791 19.7575 10.7908 17.8387 11.976C19.7575 12.9369 22.8307 15.4515 24 20H19.7425C18.8281 16.957 16.5497 14.6026 13.5366 14.2823V20H13.0718Z" fill="#42444A"></path>
+                      </svg></a><a class="footer-content__contacts-media" href="#" target="_blank">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.402 2.06801C7.77019 2.44222 4.15314 5.12524 4.00611 8.96619C3.91053 11.3103 4.93243 13.0684 7.3732 13.5626C7.65257 12.4541 7.70403 11.854 7.70403 11.854C7.70403 11.854 6.63068 10.8655 6.5204 10.2371C5.62349 5.18172 12.8944 1.7291 16.7099 5.25939C19.3418 7.7094 17.6068 15.243 13.3575 14.4593C9.28465 13.7109 15.3498 7.71646 12.1004 6.53735C9.46109 5.57711 8.05691 9.46749 9.30671 11.395C8.57153 14.7135 6.99091 17.8413 7.63051 22C9.71105 20.6232 10.4095 17.9825 10.9829 15.2289C12.0268 15.8079 12.5856 16.4151 13.9162 16.5069C18.8272 16.8528 21.5694 12.0234 20.9004 7.56113C20.2975 3.60721 15.9894 1.59495 11.402 2.06801Z" fill="#42444A"></path>
+                      </svg></a><a class="footer-content__contacts-media" href="#" target="_blank">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.0253 5.61879C20.1114 4.07537 15.8582 4 12 4C8.14177 4 3.88861 4.07537 1.97468 5.61879C0.0607595 7.16221 0 10.5063 0 12.4999C0 14.4935 0.0607595 17.8375 1.97468 19.381C3.88861 20.9244 8.14177 21 12 21V20.9997C15.8582 20.9997 20.1114 20.9244 22.0253 19.381C23.9392 17.8375 24 14.4935 24 12.4999C24 10.5063 23.9392 7.16221 22.0253 5.61879ZM15.8026 12.9495L15.8033 12.9506L9.28356 16.628C9.24857 16.6548 9.21041 16.6761 9.16934 16.6926L9.16132 16.6972L9.16083 16.6954C9.10809 16.7155 9.05195 16.7283 8.99265 16.7283C8.71583 16.7283 8.4915 16.4906 8.4915 16.1979V8.78589C8.4915 8.4929 8.71607 8.25547 8.99265 8.25547C9.07066 8.25547 9.14382 8.27604 9.20968 8.30974L9.20992 8.30949L15.8033 12.0502L15.8031 12.0507C15.9452 12.1444 16.0407 12.31 16.0407 12.5001C16.0405 12.6902 15.9447 12.8559 15.8026 12.9495Z" fill="#42444A"></path>
+                      </svg></a><a class="footer-content__contacts-media" href="#" target="_blank">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1030_18215)">
+                          <path d="M14.1214 14.1214C12.3929 15.905 12.2671 18.1286 12.1179 23C16.6593 23 19.7943 22.9843 21.4129 21.4129C22.9843 19.7943 23 16.51 23 12.1179C18.1286 12.275 15.905 12.3929 14.1214 14.1214ZM1 12.1179C1 16.51 1.01571 19.7943 2.58714 21.4129C4.20571 22.9843 7.34071 23 11.8821 23C11.725 18.1286 11.6071 15.905 9.87857 14.1214C8.095 12.3929 5.87143 12.2671 1 12.1179ZM11.8821 1C7.34857 1 4.20571 1.01571 2.58714 2.58714C1.01571 4.20571 1 7.49 1 11.8821C5.87143 11.725 8.095 11.6071 9.87857 9.87857C11.6071 8.095 11.7329 5.87143 11.8821 1ZM14.1214 9.87857C12.3929 8.095 12.2671 5.87143 12.1179 1C16.6593 1 19.7943 1.01571 21.4129 2.58714C22.9843 4.20571 23 7.49 23 11.8821C18.1286 11.725 15.905 11.6071 14.1214 9.87857Z" fill="#42444A"></path>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_1030_18215">
+                            <rect width="22" height="22" fill="white" transform="translate(1 1)"></rect>
+                          </clippath>
+                        </defs>
+                      </svg></a></div>
+                </div>
                 <div class="footer-content__politics desktop"><a class="footer-content__policy" href="#">Политика конфиденциальности</a></div>
               </div>
               <div class="footer-content__top-right">
@@ -922,8 +997,9 @@
               <div class="footer-content__politics mobile"><a class="footer-content__policy" href="#">Политика конфиденциальности</a></div>
             </div>
             <form class="footer-content__form" data-footer-subscribe> 
-              <div class="footer-content__form-block"> 
-                <input class="footer-content__form-input" type="email" required placeholder="подпишитесь на новости">
+              <div class="input-wrapper" data-input-parent="">
+                <div class="input-wrapper__placeholder">подпишитесь на новости</div>
+                <input class="input" data-input="" required="required" type="email" placeholder="подпишитесь на новости"/>
               </div>
               <button class="footer-content__form-btn" type="submit"> 
                 <div class="footer-content__form-arrow">
