@@ -5,8 +5,11 @@
     <title>catalog</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-068c5cbb.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="favicon.svg" rel="icon" type="image/x-icon">
+    <meta property="og:image" content="opengraph.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="appletouch.svg">
+    <script type="module" crossorigin src="assets/index-5c46cb26.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -27,22 +30,22 @@
                   </clippath>
                 </defs>
               </svg></a>
-            <nav class="header-nav desktop">
-              <div class="header-nav__catalog header-nav__item" data-header-catalog data-overlay-on> 
+            <nav class="header-nav">
+              <div class="header-nav__catalog header-nav__item desktop" data-header-catalog data-overlay-on> 
                 <div class="header-nav__cube"> 
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
                   </svg>
                 </div>
                 <div class="header-nav__text">Каталог</div>
-              </div><a class="header-nav__collections header-nav__item" href="#"> 
+              </div><a class="header-nav__collections header-nav__item desktop" href="#"> 
                 <div class="header-nav__cube"> 
                   <svg width="6" height="7" viewbox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
                   </svg>
                 </div>
                 <div class="header-nav__text">Коллекции</div></a>
-              <div class="header-nav__about header-nav__item about" data-header-about>
+              <div class="header-nav__about header-nav__item about desktop" data-header-about>
                 <div class="header-nav__cube cubes"> 
                   <svg width="30" height="7" viewbox="0 0 30 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="6" height="6" fill="white"></rect>
@@ -51,6 +54,22 @@
                   </svg>
                 </div>
                 <div class="header-nav__text">о нас</div>
+              </div>
+              <div class="header-nav__search header-nav__item search" data-header-search>
+                <div class="header-nav__search-svg"> 
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2101_2012)">
+                      <line x1="6.32227" y1="17.4247" x2="2.88293" y2="20.864" stroke="white" stroke-width="1.5" stroke-linecap="square"></line>
+                      <ellipse cx="13.3934" cy="10" rx="7.5" ry="7.5" transform="rotate(135 13.3934 10)" stroke="white" stroke-width="1.5"></ellipse>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_2101_2012">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="header-nav__text desktop">поиск</div>
               </div>
             </nav>
           </div>
@@ -137,7 +156,7 @@
                   </div>
                 </div>
                 <div class="header-modal__form-bot">
-                  <button class="header-modal__form-button" type="submit">Отправить</button>
+                  <button class="header-modal__form-button hover-btn" type="submit"> <span> <span>Отправить</span></span></button>
                   <p class="header-modal__form-policy">Нажимая на кнопку «Отправить», вы соглашаетесь с<a href="#">политикой конфиденциальности</a></p>
                 </div>
               </form>
@@ -363,6 +382,28 @@
                   <li class="header-sub__brand-item"> <a class="header-sub__brand-link" href="#">Пеналы </a></li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div class="header-search" data-overlay-off="data-overlay-off">
+            <p class="header-search__title desktop">Поиск</p>
+            <form class="header-search__form">
+              <div class="input-wrapper" data-input-parent="">
+                <div class="input-wrapper__placeholder">что вы хотите найти?</div>
+                <input class="input" data-input="" required="required" type="text" placeholder="что вы хотите найти?"/>
+              </div>
+              <button class="header-search__form-btn hover-btn" type="submit"> <span class="desktop"> <span>Найти</span></span>
+                <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                  <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
+                </svg>
+              </button>
+            </form>
+            <div class="header-search__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                <path d="M12.7882 12.7882L18 18" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6.00005 6L9.51477 9.51472" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+              </svg>
             </div>
           </div>
         </div>
@@ -2225,13 +2266,12 @@
                 <div class="input-wrapper__placeholder">подпишитесь на новости</div>
                 <input class="input" data-input="" required="required" type="email" placeholder="подпишитесь на новости"/>
               </div>
-              <button class="footer-content__form-btn" type="submit"> 
-                <div class="footer-content__form-arrow">
-                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 11.7747L17.85 11.7747" stroke="#42444A" stroke-width="1.5"></path>
-                    <path d="M14.7002 6.59961L21.0002 10.9905V12.6269L14.7002 17.3996" stroke="#42444A" stroke-width="1.5"></path>
-                  </svg>
-                </div>
+              <button class="footer-content__form-btn hover-btn" type="submit"> 
+                <div class="footer-content__form-arrow"><span> <span>
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 11.7747L17.85 11.7747" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M14.7002 6.59961L21.0002 10.9905V12.6269L14.7002 17.3996" stroke="#42444A" stroke-width="1.5"></path>
+                      </svg></span></span></div>
               </button>
             </form>
             <p class="footer-content__accept desktop">
