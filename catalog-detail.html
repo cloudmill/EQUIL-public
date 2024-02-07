@@ -9,7 +9,7 @@
     <link href="favicon.svg" rel="icon" type="image/x-icon">
     <meta property="og:image" content="opengraph.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="appletouch.svg">
-    <script type="module" crossorigin src="assets/index-5c46cb26.js"></script>
+    <script type="module" crossorigin src="assets/index-de07a7e9.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -715,16 +715,15 @@
                   <source class="lazyload" type="image/jpeg" srcset="images/catalog-detail-photos4.jpg 1x" alt="catalog-detail-photos4.png"/><img class="picture__img lazyload" data-src="images/catalog-detail-photos4.png" alt="catalog-detail-photos4.png"/>
                 </picture>
               </div>
-              <div class="catalog-detail__photos-btn" data-modal-btn="photogallery-modal"> 
-                <p class="catalog-detail__photos-text">открыть фотогалерею</p>
-                <div class="catalog-detail__photos-icon"> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                    <path d="M8.7431 7.99999L13.6568 7.99999" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                    <path d="M2.34315 7.99999L5.65685 7.99999" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                    <path d="M8 13.6568V2.34314" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                  </svg>
-                </div>
-              </div>
+              <div class="catalog-detail__photos-btn hover-btn" data-modal-btn="photogallery-modal"> <span> <span class="catalog-detail__photos-span"> 
+                    <p class="catalog-detail__photos-text">открыть фотогалерею</p>
+                    <div class="catalog-detail__photos-icon"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                        <path d="M8.7431 7.99999L13.6568 7.99999" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                        <path d="M2.34315 7.99999L5.65685 7.99999" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                        <path d="M8 13.6568V2.34314" stroke="#8E8F92" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      </svg>
+                    </div></span></span></div>
             </div>
             <div class="catalog-detail__filters">
               <h1 class="catalog-detail__filters-title">Тумба с раковиной подвесная Volna 60.2Y (Миранда) </h1>
@@ -899,20 +898,20 @@
                 </div>
               </div>
               <div class="catalog-detail__filters-buttons"> 
-                <div class="catalog-detail__filters-btn">где купить</div>
-                <div class="catalog-detail__filters-btn blue" data-modal-btn="catalog-detail-modal">Запросить прайС</div>
+                <div class="catalog-detail__filters-btn hover-btn"> <span> <span>где купить</span></span></div>
+                <div class="catalog-detail__filters-btn blue hover-btn" data-modal-btn="catalog-detail-modal"> <span> <span>Запросить прайС</span></span></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="catalog-video">
+        <section class="catalog-video" data-modal-btn="catalog-video-modal"> 
           <div class="catalog-video__bg"> 
             <picture class="picture">
               <source class="lazyload" type="image/webp" srcset="webp/catalog-video.webp 1x" alt="catalog-video.png"/>
               <source class="lazyload" type="image/jpeg" srcset="images/catalog-video.jpg 1x" alt="catalog-video.png"/><img class="picture__img lazyload" data-src="images/catalog-video.png" alt="catalog-video.png"/>
             </picture>
           </div>
-          <div class="catalog-video__rect" data-modal-btn="catalog-video-modal"> 
+          <div class="catalog-video__rect">
             <p class="catalog-video__rect-text">посмотрите видео</p>
             <div class="catalog-video__rect-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="49" viewbox="0 0 42 49" fill="none">
@@ -968,22 +967,28 @@
               <div class="swiper catalog-img-swiper catalog-slider__img-slider"> 
                 <div class="swiper-wrapper"> 
                   <div class="swiper-slide"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/brand-equil-slide1.webp 1x" alt="brand-equil-slide1.png"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/brand-equil-slide1.jpg 1x" alt="brand-equil-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-equil-slide1.png" alt="brand-equil-slide1.png"/>
-                    </picture>
+                    <div class="test-img" data-swiper-parallax="28%">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-equil-slide1.webp 1x" alt="brand-equil-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-equil-slide1.jpg 1x" alt="brand-equil-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-equil-slide1.png" alt="brand-equil-slide1.png"/>
+                      </picture>
+                    </div>
                   </div>
                   <div class="swiper-slide"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
-                    </picture>
+                    <div class="test-img" data-swiper-parallax="28%">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-volna-slide1.webp 1x" alt="brand-volna-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-volna-slide1.jpg 1x" alt="brand-volna-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-volna-slide1.png" alt="brand-volna-slide1.png"/>
+                      </picture>
+                    </div>
                   </div>
                   <div class="swiper-slide"> 
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/brand-equil-slide1.webp 1x" alt="brand-equil-slide1.png"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/brand-equil-slide1.jpg 1x" alt="brand-equil-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-equil-slide1.png" alt="brand-equil-slide1.png"/>
-                    </picture>
+                    <div class="test-img" data-swiper-parallax="28%">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/brand-equil-slide1.webp 1x" alt="brand-equil-slide1.png"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/brand-equil-slide1.jpg 1x" alt="brand-equil-slide1.png"/><img class="picture__img lazyload" data-src="images/brand-equil-slide1.png" alt="brand-equil-slide1.png"/>
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
