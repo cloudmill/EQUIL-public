@@ -9,13 +9,11 @@
     <link href="favicon.svg" rel="icon" type="image/x-icon">
     <meta property="og:image" content="opengraph.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="appletouch.svg">
-    <script type="module" crossorigin src="assets/index-95e4bc06.js"></script>
+    <script type="module" crossorigin src="assets/index-c534e9a1.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <div class="wrapper" id="page-start">
-      <div class="modal-block">
-      </div>
       <header class="header" data-header data-overlay-off>
         <div class="header-inner container"> 
           <div class="header-inner__left"> <a class="header__logo" href="#"> 
@@ -482,20 +480,28 @@
             </div>
           </div>
           <div class="main-slider__btns parallax__layer" data-speed="65"> 
-            <div class="main-slider__btns-btn main-slider__btns-left hover-btn"><span> <span>
+            <div class="main-slider__btns-btn main-slider__btns-left hover-btn"><span> <span class="desktop">
                   <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
                     <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
+                  </svg></span><span class="mobile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
+                    <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
+                    <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
                   </svg></span></span></div>
-            <div class="main-slider__btns-btn main-slider__btns-right hover-btn"><span> <span>
+            <div class="main-slider__btns-btn main-slider__btns-right hover-btn"><span> <span class="desktop">
                   <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
                     <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
+                  </svg></span><span class="mobile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
+                    <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
+                    <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
                   </svg></span></span></div>
           </div>
           <div class="main-slider__pagination parallax__layer" data-speed="65"> </div>
         </section>
-        <section class="after-parallax"> 
+        <section class="after-parallax" data-scroll-section>
           <section class="main-brands">
             <div class="main-brands__top container"> 
               <h3 class="main-brands__title">бренды</h3>
@@ -929,7 +935,7 @@
                 </div>
                 <h5 class="main-production__item-title">Пеналы</h5></a></div>
           </section>
-          <section class="main-actual">
+          <section class="main-actual" data-prefooter="data-prefooter">
             <div class="main-actual__vector"> 
               <svg width="1920" height="1017" viewbox="0 0 1920 1017" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-23.9712 1317.31L6.45361 1256.31L6.49854 1256.34L604.01 61.3015L803.1 160.928L398.994 969.267L2145.6 -468L2272.74 -284.118L1244.65 561.605L2311.36 238.453L2376 452.583L2269.06 484.939L795.641 930.994L-303.296 1835L-455 1683.5L-303.311 1547.17L-23.9712 1317.31Z" fill="#0A6A86"></path>
@@ -983,7 +989,7 @@
           </section>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-speed="-30">
         <div class="footer-inner"><a class="footer-inner__up" href="#page-start" data-footer-top> 
             <svg width="68" height="68" viewbox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="68" width="68" height="68" rx="8" transform="rotate(-90 0 68)" fill="#F1F1F1"></rect>
@@ -1053,10 +1059,14 @@
                 <input class="input" data-input="" required="required" type="email" placeholder="подпишитесь на новости"/>
               </div>
               <button class="footer-content__form-btn hover-btn" type="submit"> 
-                <div class="footer-content__form-arrow"><span> <span>
+                <div class="footer-content__form-arrow"><span> <span class="desktop">
                       <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 11.7747L17.85 11.7747" stroke="#42444A" stroke-width="1.5"></path>
                         <path d="M14.7002 6.59961L21.0002 10.9905V12.6269L14.7002 17.3996" stroke="#42444A" stroke-width="1.5"></path>
+                      </svg></span><span class="mobile"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
+                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
+                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
                       </svg></span></span></div>
               </button>
             </form>
@@ -1080,6 +1090,8 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal-block">
     </div>
     
   </body>
