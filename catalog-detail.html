@@ -9,7 +9,7 @@
     <link href="favicon.svg" rel="icon" type="image/x-icon">
     <meta property="og:image" content="opengraph.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="appletouch.svg">
-    <script type="module" crossorigin src="assets/index-4c8d67fb.js"></script>
+    <script type="module" crossorigin src="assets/index-6c476c74.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -638,7 +638,7 @@
           <div class="photogallery-content desktop">
             <div class="photogallery-content__thumbs"> 
               <div class="swiper-scrollbar"></div>
-              <div class="swiper photogallery-content__thumbs-swiper"> 
+              <div class="swiper photogallery-content__thumbs-swiper" data-lenis-prevent="true"> 
                 <div class="swiper-wrapper"> 
                   <div class="swiper-slide">
                     <picture class="picture">
@@ -779,12 +779,12 @@
                   <input class="input" data-input="" required="required" type="text" placeholder="имя *"/>
                 </div>
                 <div class="input-wrapper" data-input-parent="">
-                  <div class="input-wrapper__placeholder">E-mail</div>
-                  <input class="input" data-input="" required="required" type="email" placeholder="E-mail"/>
+                  <div class="input-wrapper__placeholder">E-mail *</div>
+                  <input class="input" data-input="" required="required" type="email" placeholder="E-mail *"/>
                 </div>
                 <div class="input-wrapper" data-input-parent="">
-                  <div class="input-wrapper__placeholder">Телефон *</div>
-                  <input class="input" data-input="" required="required" type="tel" placeholder="Телефон *" data-mask-phone="data-mask-phone"/>
+                  <div class="input-wrapper__placeholder">Телефон</div>
+                  <input class="input" data-input="" type="tel" placeholder="Телефон" data-mask-phone-no-required="data-mask-phone-no-required" noRequired="true"/>
                 </div>
                 <div class="input-wrapper textarea-wrapper" data-input-parent="">
                   <div class="input-wrapper__placeholder">сообщение</div>
@@ -792,7 +792,7 @@
                 </div>
               </div>
               <div class="header-modal__form-bot">
-                <button class="header-modal__form-button" type="submit">Отправить</button>
+                <button class="header-modal__form-button hover-btn" type="submit"> <span> <span>Отправить</span></span></button>
                 <p class="header-modal__form-policy">Нажимая на кнопку «Отправить», вы соглашаетесь с<a href="#">политикой конфиденциальности</a></p>
               </div>
             </form>
@@ -806,7 +806,7 @@
             </div>
             <p class="header-modal__sent-title">Отправлено</p>
             <p class="header-modal__sent-text">Спасибо. Мы свяжемся с вами в ближайшее время.</p>
-            <div class="header-modal__sent-button" data-modal-close="catalog-detail-modal">Закрыть</div>
+            <div class="header-modal__sent-button hover-btn" data-modal-close="catalog-detail-modal"><span> <span>Закрыть</span></span></div>
           </div>
         </div>
         <div class="breadcrumbs container"><a class="breadcrumbs-item" href="#">главная</a>
@@ -1000,52 +1000,55 @@
                         </svg>
                       </div>
                     </div>
-                    <div class="ac-panel catalog-accordion__panel catalog-accordion__download">
-                      <div class="catalog-accordion__download-item"> 
+                    <div class="ac-panel catalog-accordion__panel catalog-accordion__download"><a class="catalog-accordion__download-item" href="#" download="download">
                         <div class="catalog-accordion__download-col"> 
                           <p class="catalog-accordion__download-title">Схема установки</p>
                           <p class="catalog-accordion__download-text">PDF-файл</p>
                         </div>
-                        <div class="catalog-accordion__download-col"> <a class="catalog-accordion__download-btn" href="#" download="download"> 
+                        <div class="catalog-accordion__download-col"> 
+                          <div class="catalog-accordion__download-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
                               <path d="M14 4L10.7475 10L9.53535 10L6 4" stroke="#42444A" stroke-width="1.5"></path>
                               <path d="M16 13V16.6522H4V13" stroke="#42444A" stroke-width="1.5"></path>
-                            </svg></a></div>
-                      </div>
-                      <div class="catalog-accordion__download-item"> 
+                            </svg>
+                          </div>
+                        </div></a><a class="catalog-accordion__download-item" href="#" download="download"> 
                         <div class="catalog-accordion__download-col"> 
                           <p class="catalog-accordion__download-title">Паспорт</p>
                           <p class="catalog-accordion__download-text">PDF-файл</p>
                         </div>
-                        <div class="catalog-accordion__download-col"> <a class="catalog-accordion__download-btn" href="#" download="download"> 
+                        <div class="catalog-accordion__download-col"> 
+                          <div class="catalog-accordion__download-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
                               <path d="M14 4L10.7475 10L9.53535 10L6 4" stroke="#42444A" stroke-width="1.5"></path>
                               <path d="M16 13V16.6522H4V13" stroke="#42444A" stroke-width="1.5"></path>
-                            </svg></a></div>
-                      </div>
-                      <div class="catalog-accordion__download-item"> 
+                            </svg>
+                          </div>
+                        </div></a><a class="catalog-accordion__download-item" href="#" download="download"> 
                         <div class="catalog-accordion__download-col"> 
                           <p class="catalog-accordion__download-title">Презентация</p>
                           <p class="catalog-accordion__download-text">PDF-файл</p>
                         </div>
-                        <div class="catalog-accordion__download-col"> <a class="catalog-accordion__download-btn" href="#" download="download"> 
+                        <div class="catalog-accordion__download-col"> 
+                          <div class="catalog-accordion__download-btn"> 
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
                               <path d="M14 4L10.7475 10L9.53535 10L6 4" stroke="#42444A" stroke-width="1.5"></path>
                               <path d="M16 13V16.6522H4V13" stroke="#42444A" stroke-width="1.5"></path>
-                            </svg></a></div>
-                      </div>
-                      <div class="catalog-accordion__download-item"> 
+                            </svg>
+                          </div>
+                        </div></a><a class="catalog-accordion__download-item" href="#" download="download"> 
                         <div class="catalog-accordion__download-col"> 
                           <p class="catalog-accordion__download-title">3D-модели</p>
                           <p class="catalog-accordion__download-text">PDF-файл</p>
                         </div>
-                        <div class="catalog-accordion__download-col"> <a class="catalog-accordion__download-btn" href="#" download="download"> 
+                        <div class="catalog-accordion__download-col"> 
+                          <div class="catalog-accordion__download-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
                               <path d="M14 4L10.7475 10L9.53535 10L6 4" stroke="#42444A" stroke-width="1.5"></path>
                               <path d="M16 13V16.6522H4V13" stroke="#42444A" stroke-width="1.5"></path>
-                            </svg></a></div>
-                      </div>
-                    </div>
+                            </svg>
+                          </div>
+                        </div></a></div>
                   </div>
                 </div>
               </div>
