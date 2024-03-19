@@ -9,7 +9,7 @@
     <link href="favicon.svg" rel="icon" type="image/x-icon">
     <meta property="og:image" content="opengraph.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="appletouch.svg">
-    <script type="module" crossorigin src="assets/index-5026841e.js"></script>
+    <script type="module" crossorigin src="assets/index-aa55a6ea.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -606,13 +606,12 @@
             <h1 class="h2 h2--big">ООО «Эквил»</h1>
             <div>
               <div class="contact-item-title">Адрес</div>
-              <div class="contact-item-value">607620, Россия, Нижегородская обл., Богородский р-н., пос. Центральный, Производственная зона.</div>
-              <button class="button-scheme"><span>схема проезда</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
-                  <path d="M14 4L10.7475 10L9.53535 10L6 4" stroke="#42444A" stroke-width="1.5"></path>
-                  <path d="M16 13V16.6522H4V13" stroke="#42444A" stroke-width="1.5"></path>
-                </svg>
-              </button>
+              <div class="contact-item-value">607620, Россия, Нижегородская обл., Богородский р-н., <br class="desktop"> пос. Центральный, Производственная зона.</div>
+              <button class="button-scheme hover-btn"><span> <span>схема проезда
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                      <path d="M14 4L10.7475 10L9.53535 10L6 4" stroke="#42444A" stroke-width="1.5"></path>
+                      <path d="M16 13V16.6522H4V13" stroke="#42444A" stroke-width="1.5"></path>
+                    </svg></span></span></button>
             </div>
             <div class="contacts-top__col">
               <div>
@@ -623,7 +622,7 @@
               </div>
             </div>
           </div>
-          <div id="contacts-map"></div>
+          <div id="contacts-map" data-lenis-prevent="true"></div>
           <div class="contacts-form">
             <h2 class="h2">Напишите нам</h2>
             <div class="contacts-form-desc">С радостью ответим на любые вопросы.</div>
@@ -633,8 +632,8 @@
                 <input class="input" data-input="" required="required" type="text" placeholder="имя *"/>
               </div>
               <div class="input-wrapper" data-input-parent="">
-                <div class="input-wrapper__placeholder">E-mail</div>
-                <input class="input" data-input="" required="required" type="email" placeholder="E-mail"/>
+                <div class="input-wrapper__placeholder">E-mail *</div>
+                <input class="input" data-input="" required="required" type="email" placeholder="E-mail *"/>
               </div>
               <div class="input-wrapper" data-input-parent="">
                 <div class="input-wrapper__placeholder">Телефон *</div>
@@ -644,8 +643,8 @@
                 <div class="input-wrapper__placeholder">сообщение</div>
                 <textarea class="input input_textarea" data-input="" type="text" placeholder="сообщение"></textarea>
               </div>
-              <p class="header-modal__form-policy">Нажимая на кнопку «Отправить», вы соглашаетесь <br> с<a href="#">политикой конфиденциальности</a></p>
-              <button class="header-modal__form-button" type="submit">Отправить</button>
+              <p class="header-modal__form-policy">Нажимая на кнопку «Отправить», вы соглашаетесь <br class="only-desktop"> с<a href="#">политикой конфиденциальности</a></p>
+              <button class="header-modal__form-button hover-btn" type="submit"><span><span>Отправить</span></span></button>
             </form>
           </div>
         </div>
