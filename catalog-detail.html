@@ -9,7 +9,7 @@
     <link href="favicon.svg" rel="icon" type="image/x-icon">
     <meta property="og:image" content="opengraph.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="appletouch.svg">
-    <script type="module" crossorigin src="assets/index-5026841e.js"></script>
+    <script type="module" crossorigin src="assets/index-ceeea858.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -111,7 +111,8 @@
           <div class="header-catalog__inner"> 
             <div class="header-catalog__col left"> 
               <div class="header-catalog__content"> 
-                <div class="header-catalog__content-col left"> <a class="header-catalog__title" href="#">Equil</a>
+                <div class="header-catalog__content-col left"> 
+                  <div class="header-catalog__title">Equil</div>
                   <div class="header-catalog__nav"> 
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="cabinet" data-hover-brand="equil">Тумбы с раковиной</a></div>
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="closet" data-hover-brand="equil">Зеркальные шкафы</a></div>
@@ -162,7 +163,8 @@
             </div>
             <div class="header-catalog__col"> 
               <div class="header-catalog__content"> 
-                <div class="header-catalog__content-col left"> <a class="header-catalog__title" href="#">volna</a>
+                <div class="header-catalog__content-col left"> 
+                  <div class="header-catalog__title">volna</div>
                   <div class="header-catalog__nav"> 
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="cabinet" data-hover-brand="volna">Тумбы с раковиной</a></div>
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="closet" data-hover-brand="volna">Зеркальные шкафы</a></div>
@@ -216,7 +218,7 @@
           <div class="header-catalog__inner"> 
             <div class="header-catalog__col left"> 
               <div class="header-catalog__content"> 
-                <div class="header-catalog__content-col left"> <a class="header-catalog__title" href="#">Equil</a>
+                <div class="header-catalog__content-col left"> <a class="header-catalog__title hover-line" href="#">Equil</a>
                   <div class="header-catalog__nav"> 
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="cabinet" data-hover-brand="equil-collections">CORNER</a></div>
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="closet" data-hover-brand="equil-collections">eltoro</a></div>
@@ -267,7 +269,7 @@
             </div>
             <div class="header-catalog__col"> 
               <div class="header-catalog__content"> 
-                <div class="header-catalog__content-col left"> <a class="header-catalog__title" href="#">volna</a>
+                <div class="header-catalog__content-col left"> <a class="header-catalog__title hover-line" href="#">volna</a>
                   <div class="header-catalog__nav grid"> 
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="cabinet" data-hover-brand="volna-collections">adel</a></div>
                     <div class="header-catalog__nav-link"> <a href="#" data-hover-link="closet" data-hover-brand="volna-collections">conty</a></div>
@@ -755,11 +757,20 @@
               <path d="M6 18L18 6" stroke="#42444A" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
             </svg>
           </div>
-          <div class="modal-video__video"> 
-            <picture class="picture">
-              <source class="lazyload" type="image/webp" srcset="webp/catalog-video-preview.webp 1x" alt="catalog-video-preview.png"/>
-              <source class="lazyload" type="image/jpeg" srcset="images/catalog-video-preview.jpg 1x" alt="catalog-video-preview.png"/><img class="picture__img lazyload" data-src="images/catalog-video-preview.png" alt="catalog-video-preview.png"/>
-            </picture>
+          <div class="modal-video__video" data-frame-src="https://www.youtube.com/embed/puTcrXbuzO8?si=7KqK9jMgqoeWGuaK">
+            <div class="modal-video__video-preview">
+              <div class="modal-video__video-img">
+                <picture class="picture">
+                  <source class="lazyload" type="image/webp" srcset="webp/catalog-video-preview.webp 1x" alt="catalog-video-preview.png"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/catalog-video-preview.jpg 1x" alt="catalog-video-preview.png"/><img class="picture__img lazyload" data-src="images/catalog-video-preview.png" alt="catalog-video-preview.png"/>
+                </picture>
+              </div>
+              <div class="modal-video__video-play"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="49" viewbox="0 0 42 49" fill="none">
+                  <path d="M42 19.9217L0 0L0 49L42 27.346L42 19.9217Z" fill="white"></path>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <div class="header-modal header-modal_catalog" data-overlay-off="data-overlay-off" data-modal="catalog-detail-modal">
@@ -783,12 +794,12 @@
                   <input class="input" data-input="" required="required" type="email" placeholder="E-mail *"/>
                 </div>
                 <div class="input-wrapper" data-input-parent="">
-                  <div class="input-wrapper__placeholder">Телефон</div>
-                  <input class="input" data-input="" type="tel" placeholder="Телефон" data-mask-phone-no-required="data-mask-phone-no-required" noRequired="true"/>
+                  <div class="input-wrapper__placeholder">Телефон *</div>
+                  <input class="input" data-input="" required="required" type="tel" placeholder="Телефон *" data-mask-phone="data-mask-phone"/>
                 </div>
                 <div class="input-wrapper textarea-wrapper" data-input-parent="">
                   <div class="input-wrapper__placeholder">сообщение</div>
-                  <textarea class="input input_textarea" data-input="" type="text" placeholder="сообщение"></textarea>
+                  <textarea class="textarea input_textarea" data-input="" type="text" placeholder="сообщение"></textarea>
                 </div>
               </div>
               <div class="header-modal__form-bot">
@@ -1078,17 +1089,17 @@
         <section class="catalog-slider"> 
           <div class="catalog-slider__inner"> 
             <div class="catalog-slider__col"> 
-              <div class="catalog-slider__pagination"> </div>
+              <div class="catalog-slider__pagination catalog-slider__pagination_catalog"> </div>
               <div class="catalog-slider__btns"> 
                 <div class="catalog-slider__button catalog-slider__button_left hover-btn"> <span> <span> 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
-                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
-                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span></span></div>
                 <div class="catalog-slider__button catalog-slider__button_right hover-btn"> <span> <span> 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
-                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
-                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span></span></div>
               </div>
               <div class="catalog-slider__text-slider">
@@ -1097,19 +1108,19 @@
                     <div class="swiper-slide">
                       <div class="catalog-slider__text-slide">
                         <p class="catalog-slider__text-heading">лаконичный дизайн</p>
-                        <p class="catalog-slider__text-description">Мебель VOLNA отличается простым и&nbsp;современным внешним видом, который легко сочетается с&nbsp;любым интерьером.</p>
+                        <p class="catalog-slider__text-description">Мебель VOLNA отличается простым и&nbsp;современным внешним видом, который легко сочетается с&nbsp;любым&nbsp;интерьером.</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="catalog-slider__text-slide">
                         <p class="catalog-slider__text-heading">лаконичный дизайн</p>
-                        <p class="catalog-slider__text-description">Мебель VOLNA отличается простым и&nbsp;современным внешним видом, который легко сочетается с&nbsp;любым интерьером.</p>
+                        <p class="catalog-slider__text-description">Мебель VOLNA отличается простым и&nbsp;современным внешним видом, который легко сочетается с&nbsp;любым&nbsp;интерьером.</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="catalog-slider__text-slide">
                         <p class="catalog-slider__text-heading">лаконичный дизайн</p>
-                        <p class="catalog-slider__text-description">Мебель VOLNA отличается простым и&nbsp;современным внешним видом, который легко сочетается с&nbsp;любым интерьером.</p>
+                        <p class="catalog-slider__text-description">Мебель VOLNA отличается простым и&nbsp;современным внешним видом, который легко сочетается с&nbsp;любым&nbsp;интерьером.</p>
                       </div>
                     </div>
                   </div>
@@ -1166,14 +1177,14 @@
               <p class="catalog-additional__complect-title">Дополните комплект</p>
               <div class="catalog-additional__complect-btns">
                 <div class="catalog-slider__button catalog-additional__complect-button_left hover-btn"> <span> <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
-                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
-                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span></span></div>
                 <div class="catalog-slider__button catalog-additional__complect-button_right hover-btn"> <span> <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
-                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
-                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span></span></div>
               </div>
             </div>
@@ -1383,14 +1394,14 @@
               <p class="catalog-additional__complect-title">Товары из коллекции</p>
               <div class="catalog-additional__collections-btns">
                 <div class="catalog-slider__button catalog-additional__collections-button_left hover-btn"> <span> <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
-                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
-                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span></span></div>
                 <div class="catalog-slider__button catalog-additional__collections-button_right hover-btn"><span> <span> 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
-                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
-                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span></span></div>
               </div>
             </div>
@@ -1800,9 +1811,9 @@
                         <path d="M3 11.7747L17.85 11.7747" stroke="#42444A" stroke-width="1.5"></path>
                         <path d="M14.7002 6.59961L21.0002 10.9905V12.6269L14.7002 17.3996" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span><span class="mobile"> 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40" fill="none">
-                        <path d="M30 19.75L13.5 19.75" stroke="#42444A"></path>
-                        <path d="M17 14L10 18.8788V20.697L17 26" stroke="#42444A"></path>
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 19.625L10.25 19.625" stroke="#42444A" stroke-width="1.5"></path>
+                        <path d="M15.5 11L5 18.3182V21.0455L15.5 29" stroke="#42444A" stroke-width="1.5"></path>
                       </svg></span></span></div>
               </button>
             </form>
