@@ -8,7 +8,7 @@
     <link href="favicon.svg" rel="icon" type="image/x-icon">
     <meta property="og:image" content="opengraph.jpeg">
     <link rel="apple-touch-icon" sizes="180x180" href="appletouch.svg">
-    <script type="module" crossorigin src="assets/index-10a559f4.js"></script>
+    <script type="module" crossorigin src="assets/index-bc28a990.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -355,7 +355,7 @@
         </div>
         <div class="header-search" data-overlay-off="data-overlay-off">
           <p class="header-search__title desktop">Поиск</p>
-          <form class="header-search__form">
+          <form class="header-search__form" data-parsley-validate="data-parsley-validate">
             <div class="input-wrapper" data-input-parent="">
               <div class="input-wrapper__placeholder">что вы хотите найти?</div>
               <input class="input" data-input="" required="required" type="text" placeholder="что вы хотите найти?"/>
@@ -449,7 +449,7 @@
                 </nav>
               </div>
             </div>
-            <form class="footer-content__form" data-footer-subscribe> 
+            <form class="footer-content__form" data-footer-subscribe data-parsley-validate> 
               <div class="input-wrapper" data-input-parent="">
                 <div class="input-wrapper__placeholder">подпишитесь на новости</div>
                 <input class="input" data-input="" required="required" type="email" placeholder="подпишитесь на новости"/>
@@ -488,7 +488,8 @@
       </footer>
     </div>
     <div class="modal-block">
-    </div>
+    </div><script  src="https://code.jquery.com/jquery-3.7.1.min.js"  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="			  crossorigin="anonymous"></script>
+    
     
   </body>
 </html>
